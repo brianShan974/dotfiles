@@ -104,3 +104,4 @@ EDITOR=nvim
 
 alias dev="cd ~/dev"
 alias dotfiles="cd ~/.dotfiles"
+alias astrouser="cd ~/.dotfiles/astronvim/.config/nvim/lua/user"
