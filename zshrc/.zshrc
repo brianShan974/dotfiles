@@ -101,3 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 EDITOR=nvim
+
+alias dev="cd ~/dev"
+alias dotfiles="cd ~/.dotfiles"
