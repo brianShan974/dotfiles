@@ -121,9 +121,9 @@ source $ZSH/oh-my-zsh.sh
 # ~/.bash_profile if it exists, otherwise ~/.profile (for login shells)
 # and ~/.bashrc (for interactive shells) :
 
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
 
 # Restart your shell for the changes to take effect.
 
@@ -131,6 +131,10 @@ eval "$(pyenv init -)"
 # the following to ~/.bashrc:
 
 # eval "$(pyenv virtualenv-init -)"
+
+# Sofa Framework
+export SOFA_ROOT="/home/szh/dev/libs/sofa/build/v22.12/install"
+export SP3_ROOT=/home/szh/dev/libs/sofa/plugins/SofaPython3/build/v22.12/install
 
 EDITOR=nvim
 
