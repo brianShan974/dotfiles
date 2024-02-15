@@ -138,6 +138,9 @@ export SOFA_ROOT="/home/szh/dev/libs/sofa/build/v22.12/install"
 export SP3_ROOT="/home/szh/dev/libs/sofa/plugins/SofaPython3/build/v22.12/install"
 export PYTHONPATH="/home/szh/dev/libs/sofa/plugins/SofaPython3/build/v22.12/lib/python3/site-packages"
 
+# Vulkan
+export VK_DRIVER_FILES="/usr/share/vulkan/icd.d/nvidia_icd.json"
+
 EDITOR=nvim
 
 alias dev="cd ~/dev"
