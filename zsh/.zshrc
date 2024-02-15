@@ -144,3 +144,4 @@ alias dev="cd ~/dev"
 alias dotfiles="cd ~/.dotfiles"
 alias astrouser="cd ~/.dotfiles/astronvim/.config/nvim/lua/user"
 
+alias runSofa="~/dev/libs/sofa/build/v22.12/bin/runSofa"
