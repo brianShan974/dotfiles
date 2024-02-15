@@ -134,7 +134,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Sofa Framework
 export SOFA_ROOT="/home/szh/dev/libs/sofa/build/v22.12/install"
-export SP3_ROOT=/home/szh/dev/libs/sofa/plugins/SofaPython3/build/v22.12/install
+# SofaPython3 Plugin
+export SP3_ROOT="/home/szh/dev/libs/sofa/plugins/SofaPython3/build/v22.12/install"
+export PYTHONPATH="/home/szh/dev/libs/sofa/plugins/SofaPython3/build/v22.12/lib/python3/site-packages"
 
 EDITOR=nvim
 
