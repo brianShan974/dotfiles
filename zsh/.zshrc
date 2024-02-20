@@ -148,3 +148,6 @@ alias dotfiles="cd ~/.dotfiles"
 alias astrouser="cd ~/.dotfiles/astronvim/.config/nvim/lua/user"
 
 alias runSofa="~/dev/libs/sofa/build/v22.12/bin/runSofa"
+
+# thefuck alias
+eval $(thefuck --alias)
