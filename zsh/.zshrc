@@ -133,10 +133,15 @@ source $ZSH/oh-my-zsh.sh
 # eval "$(pyenv virtualenv-init -)"
 
 # Sofa Framework
-export SOFA_ROOT="/home/szh/dev/libs/sofa/build/v22.12/install"
+export SOFA_ROOT="/home/szh/dev/libs/sofa/build/v22.12"
+# export SOFA_ROOT="/home/szh/dev/libs/sofa/build/v22.12/install"
 # SofaPython3 Plugin
-export SP3_ROOT="/home/szh/dev/libs/sofa/plugins/SofaPython3/build/v22.12/install"
-export PYTHONPATH="/home/szh/dev/libs/sofa/plugins/SofaPython3/build/v22.12/lib/python3/site-packages"
+export SP3_ROOT="/home/szh/dev/libs/sofa/plugins/SofaPython3/build/v22.12"
+# export PYTHONPATH="/home/szh/dev/libs/sofa/plugins/SofaPython3/build/v22.12/lib/python3/site-packages"
+export PYTHONPATH="/home/szh/dev/libs/sofa/build/v22.12/lib/python3/site-packages"
+
+# thefuck alias
+eval $(thefuck --alias)
 
 # Vulkan
 export VK_DRIVER_FILES="/usr/share/vulkan/icd.d/nvidia_icd.json"
@@ -144,10 +149,12 @@ export VK_DRIVER_FILES="/usr/share/vulkan/icd.d/nvidia_icd.json"
 EDITOR=nvim
 
 alias dev="cd ~/dev"
+alias temp="cd ~/dev/temp"
 alias dotfiles="cd ~/.dotfiles"
 alias astrouser="cd ~/.dotfiles/astronvim/.config/nvim/lua/user"
 
 alias runSofa="~/dev/libs/sofa/build/v22.12/bin/runSofa"
 
-# thefuck alias
-eval $(thefuck --alias)
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+neofetch
