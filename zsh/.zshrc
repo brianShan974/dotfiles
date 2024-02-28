@@ -133,12 +133,12 @@ source $ZSH/oh-my-zsh.sh
 # eval "$(pyenv virtualenv-init -)"
 
 # Sofa Framework
-export SOFA_ROOT="/home/szh/dev/libs/sofa/build/v22.12"
-# export SOFA_ROOT="/home/szh/dev/libs/sofa/build/v22.12/install"
+export SOFA_ROOT="/home/szh/dev/libs/sofa/v22.12/build"
+export SOFAPYTHON3_ROOT="${SOFA_ROOT}/applications/plugins/SofaPython3"
+# export SOFA_ROOT="${SOFA_ROOT}/install"
 # SofaPython3 Plugin
-export SP3_ROOT="/home/szh/dev/libs/sofa/plugins/SofaPython3/build/v22.12"
-# export PYTHONPATH="/home/szh/dev/libs/sofa/plugins/SofaPython3/build/v22.12/lib/python3/site-packages"
-export PYTHONPATH="/home/szh/dev/libs/sofa/build/v22.12/lib/python3/site-packages"
+# export SP3_ROOT="/home/szh/dev/libs/sofa/plugins/SofaPython3/build/v22.12"
+export PYTHONPATH="${SOFA_ROOT}/lib/python3/site-packages"
 
 # thefuck alias
 eval $(thefuck --alias)
@@ -152,8 +152,10 @@ alias dev="cd ~/dev"
 alias temp="cd ~/dev/temp"
 alias dotfiles="cd ~/.dotfiles"
 alias astrouser="cd ~/.dotfiles/astronvim/.config/nvim/lua/user"
+alias venvc="python -m venv .venv"
+alias venva="source .venv/bin/activate"
 
-alias runSofa="~/dev/libs/sofa/build/v22.12/bin/runSofa"
+alias runSofa="${SOFA_ROOT}/bin/runSofa"
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
