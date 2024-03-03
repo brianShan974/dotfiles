@@ -152,8 +152,12 @@ alias dev="cd ~/dev"
 alias temp="cd ~/dev/temp"
 alias dotfiles="cd ~/.dotfiles"
 alias astrouser="cd ~/.dotfiles/astronvim/.config/nvim/lua/user"
+
 alias venvc="python -m venv .venv"
 alias venva="source .venv/bin/activate"
+
+alias i="sudo pacman -S"
+alias parui="paru -S"
 
 alias runSofa="${SOFA_ROOT}/bin/runSofa"
 
