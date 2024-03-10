@@ -146,6 +146,9 @@ eval $(thefuck --alias)
 # Vulkan
 export VK_DRIVER_FILES="/usr/share/vulkan/icd.d/nvidia_icd.json"
 
+# git
+export GIT_EDITOR=nvim
+
 EDITOR=nvim
 
 alias dev="cd ~/dev"
