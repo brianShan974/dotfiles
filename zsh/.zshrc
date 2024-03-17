@@ -85,6 +85,8 @@ plugins=(
   fzf-tab
 )
 
+ZSH_TMUX_AUTOSTART=true
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -168,5 +170,3 @@ alias runSofa="${SOFA_ROOT}/bin/runSofa"
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 setopt HIST_IGNORE_SPACE
-
-neofetch
