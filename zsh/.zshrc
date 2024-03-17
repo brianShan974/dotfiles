@@ -149,7 +149,7 @@ export VK_DRIVER_FILES="/usr/share/vulkan/icd.d/nvidia_icd.json"
 # git
 export GIT_EDITOR=nvim
 
-EDITOR=nvim
+export EDITOR=nvim
 
 alias dev="cd ~/dev"
 alias temp="cd ~/dev/temp"
@@ -165,5 +165,7 @@ alias parui="paru -S"
 alias runSofa="${SOFA_ROOT}/bin/runSofa"
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+setopt HIST_IGNORE_SPACE
 
 neofetch
