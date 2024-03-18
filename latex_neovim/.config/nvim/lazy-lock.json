@@ -39,7 +39,7 @@
   "rainbow-delimiters.nvim": { "branch": "master", "commit": "739a034046465d2b100151037401c24c42cb09cf" },
   "smart-splits.nvim": { "branch": "master", "commit": "e1e1e6ca3754bd8ef971fb69673cc17965eb9e37" },
   "sqlite.lua": { "branch": "master", "commit": "b7e28c8463254c46a8e61c52d27d6a2040492fc3" },
-  "tabout.nvim": { "branch": "master", "commit": "0d275c8d25f32457e67b5c66d6ae43f26a61bce5" },
+  "tabout.nvim": { "branch": "master", "commit": "6a8f4e67a9bfc9bfc9989cc45253180598cc4339" },
   "telescope-frecency.nvim": { "branch": "master", "commit": "9c18474d0a4b82435ce141c2a21d9bd7b9189272" },
   "telescope-fzf-native.nvim": { "branch": "main", "commit": "6c921ca12321edaa773e324ef64ea301a1d0da62" },
   "telescope-lazy.nvim": { "branch": "main", "commit": "7a360fc33d0728cf0c18c0032ca36ebfe3cd2a8c" },
