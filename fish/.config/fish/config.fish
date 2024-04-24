@@ -21,4 +21,5 @@ else if test -d /opt/homebrew
       # Homebrew is installed on MacOS
 
       /opt/homebrew/bin/brew shellenv | source
+      export LIBRARY_PATH="$LIBRARY_PATH:$(brew --prefix)/lib"
 end
