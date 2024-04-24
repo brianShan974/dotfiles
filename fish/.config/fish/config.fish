@@ -1,5 +1,5 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+      # Commands to run in interactive sessions can go here
 end
 
 # from https://github.com/orgs/Homebrew/discussions/4412#discussioncomment-8314181
@@ -22,4 +22,8 @@ else if test -d /opt/homebrew
 
       /opt/homebrew/bin/brew shellenv | source
       export LIBRARY_PATH="$LIBRARY_PATH:$(brew --prefix)/lib"
+      export PATH="$HOME/.jenv/bin:$PATH"
+      eval "$(jenv init -)"
+      set -gx CPPFLAGS "-I/opt/homebrew/opt/openjdk/include"
+      set -gx CPPFLAGS "-I/opt/homebrew/opt/openjdk@17/include"
 end
