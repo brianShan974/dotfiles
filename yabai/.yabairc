@@ -51,6 +51,6 @@ yabai -m config                                 \
 # general space settings
 
 /opt/homebrew/bin/yabai -m rule --add app="^iStat*" sticky=on layer=above manage=off border=off
-/opt/homebrew/bin/yabai -m rule --add app="^System Preferences*" manage=off
+/opt/homebrew/bin/yabai -m rule --add app="^(System Preferences|系统设置)*" manage=off
 
 echo "yabai configuration loaded.."
