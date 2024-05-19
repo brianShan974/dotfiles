@@ -26,4 +26,9 @@ else if test -d /opt/homebrew
       eval "$(jenv init -)"
       set -gx CPPFLAGS "-I/opt/homebrew/opt/openjdk/include"
       set -gx CPPFLAGS "-I/opt/homebrew/opt/openjdk@17/include"
+
+      # alias
+      alias dev="cd ~/Developer/"
 end
+
+set -g fish_key_bindings fish_vi_key_bindings
