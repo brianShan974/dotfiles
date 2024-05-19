@@ -46,11 +46,11 @@ yabai -m config                                 \
     window_border                off            \
     window_border_width          6              \
     active_window_border_color   0xff775759     \
-    normal_window_border_color   0xff555555     \
+    normal_window_border_color   0xff555555
 
 # general space settings
 
-/opt/homebrew/bin/yabai -m rule --add app="^iStat*" sticky=on layer=above manage=off border=off
-/opt/homebrew/bin/yabai -m rule --add app="^(System Preferences|系统设置)*" manage=off
+yabai -m rule --add app="^iStat*" sticky=on layer=above manage=off border=off
+yabai -m rule --add app="^(System Preferences|系统设置)*" manage=off
 
 echo "yabai configuration loaded.."
