@@ -32,3 +32,6 @@ else if test -d /opt/homebrew
 end
 
 set -g fish_key_bindings fish_vi_key_bindings
+
+# thefuck
+eval $(thefuck --alias)
