@@ -31,6 +31,9 @@ else if test -d /opt/homebrew
       alias dev="cd ~/Developer/"
 end
 
+# editor = nvim
+set -gx EDITOR nvim
+
 set -g fish_key_bindings fish_vi_key_bindings
 
 # thefuck
