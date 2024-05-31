@@ -31,6 +31,10 @@ else if test -d /opt/homebrew
       alias dev="cd ~/Developer/"
 end
 
+# python virtual env
+alias venvc="python3 -m venv .venv"
+alias venva="source .venv/bin/activate.fish"
+
 # editor = nvim
 set -gx EDITOR nvim
 
