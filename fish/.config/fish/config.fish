@@ -22,8 +22,8 @@ else if test -d /opt/homebrew
 
       /opt/homebrew/bin/brew shellenv | source
       export LIBRARY_PATH="$LIBRARY_PATH:$(brew --prefix)/lib"
-      export PATH="$HOME/.jenv/bin:$PATH"
-      eval "$(jenv init -)"
+      # export PATH="$HOME/.jenv/bin:$PATH"
+      # eval "$(jenv init -)"
       set -gx CPPFLAGS "-I/opt/homebrew/opt/openjdk/include"
       set -gx CPPFLAGS "-I/opt/homebrew/opt/openjdk@17/include"
 
