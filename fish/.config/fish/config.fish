@@ -31,6 +31,10 @@ else if test -d /opt/homebrew
       alias dev="cd ~/Developer/"
 end
 
+# configs
+alias dfc="cd ~/.dotfiles/"
+alias astroconfig="cd ~/.config/nvim/"
+
 # python virtual env
 alias venvc="python3 -m venv .venv"
 alias venva="source .venv/bin/activate.fish"
