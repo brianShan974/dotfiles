@@ -1,0 +1,39 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "base_keymap": "VSCode",
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark"
+  },
+  "vim": {
+    // "always": use system clipboard when no register is specified
+    // "never": don't use system clipboard unless "+ or "* is specified
+    // "on_yank": use system clipboard for yank operations when no register is specified
+    "use_system_clipboard": "always",
+    // Lets `f` and `t` motions extend across multiple lines
+    "use_multiline_find": true,
+    // disable cursor blink
+    "cursor_blink": false,
+    // use relative line numbers
+    "relative_line_numbers": true,
+    // hide the scroll bar
+    "scrollbar": { "show": "never" },
+    // allow cursor to reach edges of screen
+    "vertical_scroll_margin": 0,
+    "gutter": {
+      // disable line numbers completely:
+      "line_numbers": false
+    }
+  }
+}
