@@ -31,6 +31,9 @@ else if test -d /opt/homebrew
       alias dev="cd ~/Developer/"
 end
 
+# environment variables
+set -U fish_user_paths ~/.npm-packages/bin $fish_user_paths
+
 # configs
 alias dfc="cd ~/.dotfiles/"
 alias astroconfig="cd ~/.config/nvim/"
@@ -42,6 +45,7 @@ alias venva="source .venv/bin/activate.fish"
 # editor = nvim
 set -gx EDITOR nvim
 
+# fish vim mode
 set -g fish_key_bindings fish_vi_key_bindings
 
 # thefuck
