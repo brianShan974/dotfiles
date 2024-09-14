@@ -36,7 +36,9 @@ set -U fish_user_paths ~/.npm-packages/bin $fish_user_paths
 
 # configs
 alias dfc="cd ~/.dotfiles/"
-alias astroconfig="cd ~/.config/nvim/"
+alias nvimconfig="cd ~/.config/nvim/"
+alias astroconfig="cd ~/.dotfiles/astronvim4/.config/nvim/"
+alias mynvimconfig="cd ~/.dotfiles/my_nvim/.config/nvim/"
 
 # python virtual env
 alias venvc="python3 -m venv .venv"
