@@ -29,6 +29,9 @@ else if test -d /opt/homebrew
 
     # alias
     alias dev="cd ~/Developer/"
+else
+    # alias
+    alias dev="cd ~/dev/"
 end
 
 # environment variables
