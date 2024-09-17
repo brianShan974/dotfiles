@@ -41,8 +41,8 @@ alias astroconfig="cd ~/.dotfiles/astronvim4/.config/nvim/"
 alias mynvimconfig="cd ~/.dotfiles/my_nvim/.config/nvim/"
 
 # python virtual env
-alias venvc="python3 -m venv .venv"
-alias venva="source .venv/bin/activate.fish"
+alias vc="python3 -m venv .venv"
+alias vc="source .venv/bin/activate.fish"
 
 # shortcuts
 alias clc="clear"
