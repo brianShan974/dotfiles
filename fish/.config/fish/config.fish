@@ -47,6 +47,7 @@ alias mynvimconfig="cd ~/.dotfiles/my_nvim/.config/nvim/"
 alias vc="python3 -m venv .venv"
 alias va="source .venv/bin/activate.fish"
 alias vr="rm -rf .venv"
+alias vd="deactivate"
 
 # shortcuts
 alias clc="clear"
