@@ -66,4 +66,6 @@ set -gx EDITOR nvim
 set -g fish_key_bindings fish_vi_key_bindings
 
 # thefuck
-thefuck --alias | source
+if command -v thefuck
+    thefuck --alias | source
+end
