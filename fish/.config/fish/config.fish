@@ -41,13 +41,20 @@ set -U fish_user_paths ~/.npm-packages/bin $fish_user_paths
 alias dfc="cd ~/.dotfiles/"
 alias nvimconfig="cd ~/.config/nvim/"
 alias astroconfig="cd ~/.dotfiles/astronvim4/.config/nvim/"
-alias mynvimconfig="cd ~/.dotfiles/my_nvim/.config/nvim/"
+alias fishconfig="nvim ~/.config/fish/config.fish"
 
 # python virtual env
 alias vc="python3 -m venv .venv"
 alias va="source .venv/bin/activate.fish"
 alias vr="rm -rf .venv"
 alias vd="deactivate"
+
+# important dirs
+if test -d /opt/homebrew
+    alias ICL="cd ~/Developer/ICL"
+else
+    alias ICL="cd ~/dev/ICL"
+end
 
 # shortcuts
 alias clc="clear"
