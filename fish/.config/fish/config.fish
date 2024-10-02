@@ -65,7 +65,15 @@ set -gx EDITOR nvim
 # fish vim mode
 set -g fish_key_bindings fish_vi_key_bindings
 
+# ssh to lab machines at ICL
+alias sshtolab="ssh -t zs524@shell$(jot -r 1 1 5).doc.ic.ac.uk /vol/linux/bin/sshtolab"
+
 # thefuck
-if command -v thefuck
+if command -v thefuck >/dev/null
     thefuck --alias | source
+end
+
+# neofetch
+if command -v neofetch >/dev/null
+    neofetch
 end
