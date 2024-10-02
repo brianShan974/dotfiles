@@ -74,6 +74,6 @@ if command -v thefuck >/dev/null
 end
 
 # neofetch
-if command -v neofetch >/dev/null
-    neofetch
-end
+# if command -v neofetch >/dev/null
+#     neofetch
+# end
