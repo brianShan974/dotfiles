@@ -61,12 +61,15 @@ alias clc="clear"
 
 # editor = nvim
 set -gx EDITOR nvim
+alias n="nvim"
 
 # fish vim mode
 set -g fish_key_bindings fish_vi_key_bindings
 
 # ssh to lab machines at ICL
-alias sshtolab="ssh -t zs524@shell$(jot -r 1 1 5).doc.ic.ac.uk /vol/linux/bin/sshtolab"
+if command -v jot >/dev/null
+    alias sshtolab="ssh -t zs524@shell$(jot -r 1 1 5).doc.ic.ac.uk /vol/linux/bin/sshtolab"
+end
 
 # thefuck
 if command -v thefuck >/dev/null
