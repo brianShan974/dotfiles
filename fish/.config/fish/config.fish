@@ -80,3 +80,9 @@ end
 # if command -v neofetch >/dev/null
 #     neofetch
 # end
+
+# raspberry pi
+if test -d /media/storage/brian/
+    alias animed="cd /media/storage/brian/videos/番/站外"
+    alias anime="sudo /snap/bin/nvim /etc/transmission-rss.conf && sudo service transmission-rss restart"
+end
