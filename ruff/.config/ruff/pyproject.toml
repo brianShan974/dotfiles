@@ -1,0 +1,6 @@
+[tool.ruff]
+# Allow lines to be as long as 80.
+line-length = 80
+
+[tool.ruff.lint.pycodestyle]
+max-line-length = 80
