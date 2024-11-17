@@ -14,7 +14,6 @@ AllowShortIfStatementsOnASingleLine: false
 IndentCaseLabels: false
 ColumnLimit: 0
 AccessModifierOffset: 0
-IndentAccessModifiers: false
 ---
 Language: Java
 JavaImportGroups: ["java", "javax", "javafx", "org", "io", "com", "de.gsi"]
