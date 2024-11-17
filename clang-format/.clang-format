@@ -13,7 +13,8 @@ BreakBeforeBraces: Allman
 AllowShortIfStatementsOnASingleLine: false
 IndentCaseLabels: false
 ColumnLimit: 0
-AccessModifierOffset: 0
+AccessModifierOffset: -4
+IndentAccessModifiers: false
 ---
 Language: Java
 JavaImportGroups: ["java", "javax", "javafx", "org", "io", "com", "de.gsi"]
