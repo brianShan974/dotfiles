@@ -91,3 +91,6 @@ end
 if test -e /vol/linux/bin/nfiles
     alias nfiles="/vol/linux/bin/nfiles"
 end
+
+# ICL database
+source ~/.pgdb-zs524-zs524
