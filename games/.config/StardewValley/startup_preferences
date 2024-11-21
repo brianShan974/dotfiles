@@ -7,15 +7,15 @@
   <levelTenCombat>false</levelTenCombat>
   <skipWindowPreparation>false</skipWindowPreparation>
   <sawAdvancedCharacterCreationIndicator>false</sawAdvancedCharacterCreationIndicator>
-  <timesPlayed>4</timesPlayed>
-  <windowMode>1</windowMode>
+  <timesPlayed>11</timesPlayed>
+  <windowMode>0</windowMode>
   <displayIndex>0</displayIndex>
   <gamepadMode>Auto</gamepadMode>
   <playerLimit>-1</playerLimit>
-  <fullscreenResolutionX>2560</fullscreenResolutionX>
-  <fullscreenResolutionY>1664</fullscreenResolutionY>
+  <fullscreenResolutionX>1920</fullscreenResolutionX>
+  <fullscreenResolutionY>1080</fullscreenResolutionY>
   <lastEnteredIP />
-  <languageCode>en</languageCode>
+  <languageCode>zh</languageCode>
   <clientOptions>
     <autoRun>true</autoRun>
     <dialogueTyping>true</dialogueTyping>
@@ -43,6 +43,8 @@
     <fullscreen>false</fullscreen>
     <windowedBorderlessFullscreen>true</windowedBorderlessFullscreen>
     <showClearBackgrounds>false</showClearBackgrounds>
+    <useChineseSmoothFont>false</useChineseSmoothFont>
+    <useAlternateFont>false</useAlternateFont>
     <ipConnectionsEnabled>true</ipConnectionsEnabled>
     <enableServer>true</enableServer>
     <enableFarmhandCreation>true</enableFarmhandCreation>
@@ -54,6 +56,7 @@
     <footstepVolumeLevel>0.9</footstepVolumeLevel>
     <ambientVolumeLevel>0.75</ambientVolumeLevel>
     <snowTransparency>1</snowTransparency>
+    <dialogueFontScale>1</dialogueFontScale>
     <zoomLevel>1</zoomLevel>
     <localCoopBaseZoomLevel>1</localCoopBaseZoomLevel>
     <uiScale>-1</uiScale>
