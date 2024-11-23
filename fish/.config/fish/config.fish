@@ -39,9 +39,15 @@ set -U fish_user_paths ~/.npm-packages/bin $fish_user_paths
 
 # configs
 alias dfc="cd ~/.dotfiles/"
+alias dfcreadme="nvim ~/.dotfiles/README.md"
 alias nvimconfig="cd ~/.config/nvim/"
 alias astroconfig="cd ~/.dotfiles/astronvim4/.config/nvim/"
-alias fishconfig="nvim ~/.config/fish/config.fish"
+alias fishconfig="nvim ~/.dotfiles/fish/.config/fish/config.fish"
+alias tmuxconfig="nvim ~/.dotfiles/tmux/.config/tmux/tmux.conf"
+
+# reloads
+alias fishreload="source ~/.config/fish/config.fish"
+alias tmuxreload="tmux source ~/.config/tmux/tmux.conf"
 
 # python virtual env
 alias vc="python3 -m venv .venv"
