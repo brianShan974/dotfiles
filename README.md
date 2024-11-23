@@ -72,7 +72,7 @@ At least least do not make it contain `pyproject.toml`.
 As time goes by,
 you'll see what I mean.
 
-## My `tmux` Configurations
+## My [`tmux` Configurations](tmux/.config/tmux)
 
 This config is adapted from the `tmux` config of [Dreams of Code](https://www.youtube.com/@dreamsofcode)
 
@@ -119,7 +119,7 @@ This config is adapted from the `tmux` config of [Dreams of Code](https://www.yo
 - mouse support is enabled
 - window and pane numbering start from 1 instead of 0
 
-## My `fish` Configurations
+## My [`fish` Configurations](fish/.config/fish)
 
 ### Aliases
 
@@ -155,9 +155,9 @@ Here is a (probably incomplete) list of plugins installed with `oh-my-fish` (exc
 
 Here is a definitely complete list of plugins installed with `fisher` (excluding `fisher` itself):
 
-## My `latex_neovim` Configurations
+## My [`latex_neovim` Configurations](latex_neovim/.config/nvim)
 
-The `neovim` configuration shown in this repo (`latex_neovim`) is based on that of [Fireond](https://github.com/Fireond/dotfiles).
+The `neovim` configuration shown in this repo ([`latex_neovim`](latex_neovim/.config/nvim)) is based on that of [Fireond](https://github.com/Fireond/dotfiles).
 This config is slightly tuned for writing $\LaTeX$ documents,
 and is not guaranteed to work on your machine
 (in fact,
@@ -169,3 +169,8 @@ A more detailed explanation of this config can be found [here](https://space.bil
 ## My [`AstroNvim`](https://astronvim.com/) Configurations
 
 Please refer to [my config](https://github.com/brianShan974/astronvim4-config) where the documentation is not complete.
+
+## My [`game` Directory](game/.config/game)
+
+Contains my Stardew Valley saves.
+Please make sure that you know what you're doing before trying to run `stow game`.
