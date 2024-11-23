@@ -1,18 +1,80 @@
 # My Dotfiles
 
-My dotfiles.
+My dotfiles for Unix-like operating systems.
+Definitely works on macOS.
+May work (probably definitely do) work on linux.
+Basically unusable on Windows.
 
-## Something Else to Have Done
+## Installation
 
-### On M3 Macbook Air
+### Dependencies
 
-#### `markdown-preview.nvim` doesn't work out of the box
+Please install `git` before using these dotfiles and installing other dependencies.
+Since you are here,
+you have probably already installed [`git`](https://git-scm.com/).
 
-The solution is to `cd` into `~/.local/share/nvim/lazy/markdown-preview.nvim/` and run `npm install`.
+Please install [`gnu-stow`](https://www.gnu.org/software/stow/) using your favorite package manager.
+
+### Managing Dotfiles
+
+I am going to assume that your `XDG_CONFIG_HOME` is set to `~/.config`.
+If you don't know what this is,
+my assumption is probably going to hold true.
+
+First,
+clone this repo under `~`
+(or the parent directory of `XDG_CONFIG_HOME`)
+and
+(I personally like to)
+name this directory `.dotfiles`.
+You may want to run this command:
+
+```
+git clone https://github.com/brianShan974/dotfiles.git ~/.dotfiles
+```
+
+Then you can `cd` into this directory,
+and look for the configurations for anything you may want.
+
+#### Installing Configurations
+
+If you see the configurations you need,
+for example you need my [`ruff`](https://github.com/astral-sh/ruff) config,
+you can install the configuration like this:
+
+```
+cd ~/.dotfiles && stow ruff
+```
+
+In this command, `ruff` is the name of the directory in `~/.dotfiles`.
+
+#### Uninstalling Configurations
+
+If later you find my configurations somewhat disappointing,
+you can uninstall the configurations like this:
+
+```
+cd ~/.dotfiles && stow -D ruff
+```
+
+Again,
+`ruff` is the name of the directory you installed before.
+
+### Something Worth Noting
+
+If you have previous experience with `stow`,
+please ignore this section.
+
+If you are installing `ruff` for example,
+please make sure that there is no such directory as `~/.config/ruff` before installing.
+At least make it empty.
+At least least do not make it contain `pyproject.toml`.
+As time goes by,
+you'll see what I mean.
 
 ## My `tmux` Configurations
 
-Adapted from the `tmux` config of [Dreams of Code](https://www.youtube.com/@dreamsofcode)
+This config is adapted from the `tmux` config of [Dreams of Code](https://www.youtube.com/@dreamsofcode)
 
 - [github repo](https://github.com/dreamsofcode-io/tmux)
 - [youtube video](https://www.youtube.com/watch?v=DzNmUNvnB04)
@@ -21,7 +83,8 @@ Adapted from the `tmux` config of [Dreams of Code](https://www.youtube.com/@drea
 
 - The prefix key is `<c-space>` (in `vim` key notations).
 - `<n>` represents a number key from (0 to 9).
-- `<nav>` represents an arrow key or vim navigation keys (`h`, `j`, `k` or `l`).
+- `<nav>` represents an arrow key or vim navigation keys
+  (`h`, `j`, `k` or `l`).
 - `<CR>` represents the enter key.
 - Vim key notations are used.
 
@@ -60,18 +123,47 @@ Adapted from the `tmux` config of [Dreams of Code](https://www.youtube.com/@drea
 
 ### Aliases
 
-The aliases can be read from [`config.fish`](fish/.config/fish/config.fish), and some of them are highly personal.
-Therefore, detailed explanation won't be given here.
+The aliases can be read from [`config.fish`](fish/.config/fish/config.fish),
+and some of them are highly personal.
+Therefore,
+detailed explanation won't be given here.
 
-### `omf` Plugins
+### Plugin Managers
 
-Here is a list of plugins installed with `omf`:
+- [`oh-my-fish`](https://github.com/oh-my-fish/oh-my-fish)
+- [`fisher`](https://github.com/jorgebucaran/fisher)
+
+#### `oh-my-fish` Plugins
+
+Here is a (probably incomplete) list of plugins installed with `oh-my-fish` (excluding `oh-my-fish` itself):
+
+- Plugins
+  - [`git`](https://github.com/jhillyerd/plugin-git)
+  - [`bass`](https://github.com/edc/bass)
+  - [`brew`](https://github.com/oh-my-fish/plugin-brew)
+  - [`colored-man-pages`](https://github.com/PatrickF1/colored_man_pages.fish)
+  - [`export`](https://github.com/oh-my-fish/plugin-export)
+  - [`osx`](https://github.com/oh-my-fish/plugin-osx)
+  - [`wifi-password`](https://github.com/oh-my-fish/plugin-wifi-password)
+  - [`z`](https://github.com/oh-my-fish/plugin-z)
+- Themes
+  - [`trout`](https://github.com/oh-my-fish/theme-trout)
+
+#### `fisher` Plugins
+
+- [`tmux.fish`](https://github.com/budimanjojo/tmux.fish)
+
+Here is a definitely complete list of plugins installed with `fisher` (excluding `fisher` itself):
 
 ## My `latex_neovim` Configurations
 
 The `neovim` configuration shown in this repo (`latex_neovim`) is based on that of [Fireond](https://github.com/Fireond/dotfiles).
-This config is slightly tuned for writing $\LaTeX$ documents, and is not guaranteed to work on your machine (in fact, it doesn't even work perfectly on my machine).
-Therefore, using this config is not recommended.
+This config is slightly tuned for writing $\LaTeX$ documents,
+and is not guaranteed to work on your machine
+(in fact,
+it doesn't even work perfectly on my machine).
+Therefore,
+using this config is not recommended.
 A more detailed explanation of this config can be found [here](https://space.bilibili.com/171766861/channel/series) in his Bilibili channel.
 
 ## My [`AstroNvim`](https://astronvim.com/) Configurations
