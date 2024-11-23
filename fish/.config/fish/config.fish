@@ -100,3 +100,12 @@ end
 
 # ICL database
 source ~/.pgdb-zs524-zs524
+
+# tmux.fish
+# set -gx fish_tmux_autostart true
+set -gx fish_tmux_autoquit true
+
+# tmux
+# if test -d ~/.config/tmux/plugins/
+#     tmux
+# end
