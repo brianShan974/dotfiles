@@ -64,6 +64,7 @@ end
 
 # shortcuts
 alias clc="clear"
+alias lg="lazygit"
 
 # editor = nvim
 set -gx EDITOR nvim
