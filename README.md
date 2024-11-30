@@ -81,33 +81,34 @@ This config is adapted from the `tmux` config of [Dreams of Code](https://www.yo
 
 ### Keybindings
 
-- The prefix key is `<c-space>` (in `vim` key notations).
-- `<n>` represents a number key from (0 to 9).
+- The prefix key is `<c-space>` (in `vim` key notations)
+- `<n>` represents a number key from (0 to 9)
 - `<nav>` represents an arrow key or vim navigation keys
-  (`h`, `j`, `k` or `l`).
-- `<CR>` represents the enter key.
-- Vim key notations are used.
+  (`h`, `j`, `k` or `l`)
+- `<left>` and `<right>` are left and right arrow keys
+- `<CR>` represents the enter key
+- Vim key notations are used
 
-| Effect                                    | Key                    | Description                                                                                                                 |
-| ----------------------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| create a new window                       | `<prefix>c`            |                                                                                                                             |
-| switch between windows                    | `<prefix><n>`          | switch to window `n`                                                                                                        |
-| switch to the next window                 | `<prefix>n` or `<a-L>` |                                                                                                                             |
-| switch to the previous window             | `<prefix>p` or `<a-H>` |                                                                                                                             |
-| close a window                            | `<prefix>&`            |                                                                                                                             |
-| split the current pane vertically         | `<prefix>%`            | "vertically" means that the new pane is to the right of the old pane; new panes will start in the current directory as well |
-| split the current pane horizontally       | `<prefix>"`            | "horizontally" means that the new pane is under the old pane; new panes will start in the current directory as well         |
-| navigate through panes                    | `<prefix><nav>`        |                                                                                                                             |
-| swap the current pane with the left pane  | `<prefix>{`            |                                                                                                                             |
-| swap the current pane with the right pane | `<prefix>}`            |                                                                                                                             |
-| show pane numbers                         | `<prefix>q`            | select a pane by pressing the corresponding `<n>`                                                                           |
-| zoom-in into a pane                       | `<prefix>z`            |                                                                                                                             |
-| turn a pane into a window                 | `<prefix>!`            |                                                                                                                             |
-| close a pane                              | `<prefix>x`            |                                                                                                                             |
-| list active sessions                      | `<prefix>s`            |                                                                                                                             |
-| preview windows for each session          | `<prefix>w`            | attach to the selected session by pressing `<CR>`                                                                           |
-| install plugins                           | `<prefix>I`            |                                                                                                                             |
-| enter copy mode                           | `<prefix>[`            | `<c-v>` is used to toggle visual block mode in visual mode, instead of directly entering visual block mode                  |
+| Effect                                    | Key                          | Description                                                                                                                 |
+| ----------------------------------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| create a new window                       | `<prefix>c`                  |                                                                                                                             |
+| switch between windows                    | `<prefix><n>`                | switch to window `n`                                                                                                        |
+| switch to the next window                 | `<prefix>n` or `<c-s-right>` |                                                                                                                             |
+| switch to the previous window             | `<prefix>p` or `<c-s-left>`  |                                                                                                                             |
+| close a window                            | `<prefix>&`                  |                                                                                                                             |
+| split the current pane vertically         | `<prefix>%`                  | "vertically" means that the new pane is to the right of the old pane; new panes will start in the current directory as well |
+| split the current pane horizontally       | `<prefix>"`                  | "horizontally" means that the new pane is under the old pane; new panes will start in the current directory as well         |
+| navigate through panes                    | `<prefix><nav>`              |                                                                                                                             |
+| swap the current pane with the left pane  | `<prefix>{`                  |                                                                                                                             |
+| swap the current pane with the right pane | `<prefix>}`                  |                                                                                                                             |
+| show pane numbers                         | `<prefix>q`                  | select a pane by pressing the corresponding `<n>`                                                                           |
+| zoom-in into a pane                       | `<prefix>z`                  |                                                                                                                             |
+| turn a pane into a window                 | `<prefix>!`                  |                                                                                                                             |
+| close a pane                              | `<prefix>x`                  |                                                                                                                             |
+| list active sessions                      | `<prefix>s`                  |                                                                                                                             |
+| preview windows for each session          | `<prefix>w`                  | attach to the selected session by pressing `<CR>`                                                                           |
+| install plugins                           | `<prefix>I`                  |                                                                                                                             |
+| enter copy mode                           | `<prefix>[`                  | `<c-v>` is used to toggle visual block mode in visual mode, instead of directly entering visual block mode                  |
 
 ### Theme
 
