@@ -57,10 +57,11 @@ alias vd="deactivate"
 
 # important dirs
 if test -d /opt/homebrew
-    alias ICL="cd ~/Developer/ICL"
+    alias ICL="cd ~/Developer/ICL/"
 else
-    alias ICL="cd ~/dev/ICL"
+    alias ICL="cd ~/dev/ICL/"
 end
+alias desktop="cd ~/Desktop/"
 
 # shortcuts
 alias clc="clear"
