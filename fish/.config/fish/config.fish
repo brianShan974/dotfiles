@@ -42,6 +42,7 @@ alias dfc="cd ~/.dotfiles/"
 alias dfcreadme="nvim ~/.dotfiles/README.md"
 alias nvimconfig="cd ~/.config/nvim/"
 alias astroconfig="cd ~/.dotfiles/astronvim4/.config/nvim/"
+alias lazyconfig="cd ~/.dotfiles/lazyvim/.config/nvim/"
 alias fishconfig="nvim ~/.dotfiles/fish/.config/fish/config.fish"
 alias tmuxconfig="nvim ~/.dotfiles/tmux/.config/tmux/tmux.conf"
 
