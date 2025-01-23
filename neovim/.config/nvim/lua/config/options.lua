@@ -4,6 +4,9 @@ local tabwidth = 4
 vim.opt.backup = false
 vim.opt.undofile = true
 
+-- clipboard
+vim.opt.clipboard = "unnamedplus"
+
 -- file
 vim.opt.fileencoding = "utf-8"
 vim.opt.autoread = true
