@@ -56,6 +56,13 @@ alias va="source .venv/bin/activate.fish"
 alias vr="rm -rf .venv"
 alias vd="deactivate"
 
+# rust
+alias c="cargo"
+alias cb="cargo build"
+alias cbr="cargo build --release"
+alias cr="cargo run"
+alias crr="cargo run --release"
+
 # important dirs
 if test -d /opt/homebrew
     alias ICL="cd ~/Developer/ICL/"
