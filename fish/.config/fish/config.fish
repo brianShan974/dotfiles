@@ -69,7 +69,9 @@ if test -d /opt/homebrew
 else
     alias ICL="cd ~/dev/ICL/"
 end
-alias desktop="cd ~/Desktop/"
+alias dt="cd ~/Desktop/"
+alias doc="cd ~/Documents/"
+alias cv="cd ~/Documents/curriculum-vitae/"
 
 # shortcuts
 alias clc="clear"
