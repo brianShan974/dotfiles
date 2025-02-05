@@ -58,35 +58,15 @@ set ft=xxd
 
 set clipboard+=unnamedplus
 
-map S :w<CR>
-map Q :q<CR>
+map <c-h> <c-w>h
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
 
-map te :tabe<CR>
-map tn :+tabnext<CR>
-map tp :-tabnext<CR>
-
-map sr :set splitright<CR>:vsplit<CR>
-map sl :set nosplitright<CR>:vsplit<CR>
-map sb :set splitbelow<CR>:split<CR>
-map sa :set nosplitbelow<CR>:split<CR>
-
-map <LEADER>l <C-w>l
-map <LEADER>h <C-w>h
-map <LEADER>j <C-w>j
-map <LEADER>k <C-w>k
-
-map <up> :res +1<CR>
-map <down> :res -1<CR>
-map <left> :vertical resize-1<CR>
-map <right> :vertical resize+1<CR>
+map s (flash.search)
 
 noremap + nzz
 noremap - Nzz
-
-noremap H 5kzz
-noremap L 5jzz
-noremap <c-h> Hzz
-noremap <c-l> Lzz
 
 noremap <LEADER><CR> :nohlsearch<CR>
 
