@@ -45,6 +45,7 @@ alias astroconfig="cd ~/.dotfiles/astronvim4/.config/nvim/"
 alias lazyconfig="cd ~/.dotfiles/lazyvim/.config/nvim/"
 alias fishconfig="nvim ~/.dotfiles/fish/.config/fish/config.fish"
 alias tmuxconfig="nvim ~/.dotfiles/tmux/.config/tmux/tmux.conf"
+alias snippets="cd ~/.config/nvim/snippets/"
 
 # reloads
 alias fishreload="source ~/.config/fish/config.fish"
