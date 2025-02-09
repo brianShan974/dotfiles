@@ -122,3 +122,6 @@ set -gx fish_tmux_autoquit true
 # if test -d ~/.config/tmux/plugins/
 #     tmux
 # end
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/szh/.lmstudio/bin
