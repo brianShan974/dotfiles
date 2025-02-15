@@ -126,7 +126,9 @@ if test -e /vol/linux/bin/nfiles
 end
 
 # ICL database
-source ~/.pgdb-zs524-zs524
+if test -e ~/.pgdb-zs524-zs524
+    source ~/.pgdb-zs524-zs524
+end
 
 # tmux.fish
 # set -gx fish_tmux_autostart true
