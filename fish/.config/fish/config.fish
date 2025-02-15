@@ -26,12 +26,6 @@ else if test -d /opt/homebrew
     # eval "$(jenv init -)"
     set -gx CPPFLAGS -I/opt/homebrew/opt/openjdk/include
     set -gx CPPFLAGS "-I/opt/homebrew/opt/openjdk@17/include"
-
-    # alias
-    alias dev="cd ~/Developer/"
-else
-    # alias
-    alias dev="cd ~/dev/"
 end
 
 # environment variables
@@ -65,10 +59,14 @@ alias cr="cargo run"
 alias crr="cargo run --release"
 
 # important dirs
-if test -d /opt/homebrew
+if test -d ~/Developer
+    alias dev="cd ~/Developer/"
     alias ICL="cd ~/Developer/ICL/"
+    alias cloned="cd ~/Developer/cloned/"
 else
+    alias dev="cd ~/dev/"
     alias ICL="cd ~/dev/ICL/"
+    alias cloned="cd ~/dev/cloned/"
 end
 alias dt="cd ~/Desktop/"
 alias doc="cd ~/Documents/"
