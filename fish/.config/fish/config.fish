@@ -139,3 +139,11 @@ set -gx fish_tmux_autoquit true
 
 # Added by LM Studio CLI (lms)
 set -gx PATH $PATH /Users/szh/.lmstudio/bin
+
+# better tools
+# ls
+if command -v eza >/dev/null
+    alias ls="eza --git --icons -a"
+    alias ll="eza --git --icons -la"
+    alias lt="eza --git --icons -l -T"
+end
