@@ -147,3 +147,7 @@ if command -v eza >/dev/null
     alias ll="eza --git --icons -la"
     alias lt="eza --git --icons -l -T --gitignore"
 end
+# cat
+if command -v bat >/dev/null
+    alias cat="bat"
+end
