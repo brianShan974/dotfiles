@@ -145,7 +145,7 @@ set -gx PATH $PATH /Users/szh/.lmstudio/bin
 if command -v eza >/dev/null
     alias ls="eza --git --icons"
     alias ll="eza --git --icons -la"
-    alias lt="eza --git --icons -l -T --gitignore"
+    alias lt="eza --git --icons -l -T --git-ignore"
 end
 # cat
 if command -v bat >/dev/null
