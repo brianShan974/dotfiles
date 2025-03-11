@@ -52,11 +52,11 @@ alias vr="rm -rf .venv"
 alias vd="deactivate"
 
 # rust
-alias c="cargo"
-alias cb="cargo build"
-alias cbr="cargo build --release"
-alias cr="cargo run"
-alias crr="cargo run --release"
+abbr --add c cargo
+abbr --add cb cargo build
+abbr --add cbr cargo build --release
+abbr --add cr cargo run
+abbr --add crr cargo run --release
 
 # important dirs
 if test -d ~/Developer
@@ -74,11 +74,11 @@ alias cv="cd ~/Documents/curriculum-vitae/"
 
 # shortcuts
 alias clc="clear"
-alias lg="lazygit"
+abbr --add lg lazygit
 
 # editor = nvim
 set -gx EDITOR nvim
-alias n="nvim"
+abbr --add n nvim
 
 # fish vim mode
 set -g fish_key_bindings fish_vi_key_bindings
