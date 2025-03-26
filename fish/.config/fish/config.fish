@@ -57,6 +57,8 @@ abbr --add cb cargo build
 abbr --add cbr cargo build --release
 abbr --add cr cargo run
 abbr --add crr cargo run --release
+abbr --add cre cargo run --example
+abbr --add crre cargo run --release --example
 
 # important dirs
 if test -d ~/Developer
