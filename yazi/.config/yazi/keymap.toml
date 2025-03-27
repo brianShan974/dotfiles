@@ -487,11 +487,11 @@ keymap = [
     { on = "f", run = "filter", desc = "Apply a filter for the help items" },
 ]
 
-# vcs-files.yazi
+# jump-to-char.yazi
 [[manager.prepend_keymap]]
-on = ["g", "c"]
-run = "plugin vcs-files"
-desc = "Show git file changes"
+on = "f"
+run = "plugin jump-to-char"
+desc = "Jump to char"
 
 # lazygit.yazi
 [[manager.prepend_keymap]]
@@ -499,14 +499,20 @@ on = ["g", "i"]
 run = "plugin lazygit"
 desc = "Run lazygit"
 
+# toggle-pane.yazi
+[[manager.prepend_keymap]]
+on = "T"
+run = "plugin toggle-pane max-preview"
+desc = "Maximize or restore the preview pane"
+
 # what-size.yazi
 [[manager.prepend_keymap]]
 on = [".", "s"]
 run = "plugin what-size"
 desc = "Calc size of selection or cwd"
 
-# jump-to-char.yazi
+# vcs-files.yazi
 [[manager.prepend_keymap]]
-on = "f"
-run = "plugin jump-to-char"
-desc = "Jump to char"
+on = ["g", "c"]
+run = "plugin vcs-files"
+desc = "Show git file changes"

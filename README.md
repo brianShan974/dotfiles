@@ -236,7 +236,7 @@ Here is a list of plugins installed with `ya`:
 - [glow.yazi](https://github.com/Reledia/glow.yazi)
 - [jump-to-char.yazi](https://github.com/yazi-rs/plugins/tree/main/jump-to-char.yazi)
 - [lazygit.yazi](https://github.com/Lil-Dank/lazygit.yazi)
-- [max-preview.yazi](https://github.com/yazi-rs/plugins/tree/main/max-preview.yazi)
+- [toggle-pane.yazi](https://github.com/yazi-rs/plugins/tree/main/toggle-pane.yazi)
 - [vcs-files.yazi](https://github.com/yazi-rs/plugins/tree/main/vcs-files.yazi)
 - [what-size.yazi](https://github.com/pirafrank/what-size.yazi)
 
