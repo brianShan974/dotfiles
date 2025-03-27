@@ -105,6 +105,80 @@ At least least do not make it contain `pyproject.toml`.
 As time goes by,
 you'll see what I mean.
 
+## [My `fish` Config](fish)
+
+### Aliases
+
+The aliases can be read from [`config.fish`](fish/.config/fish/config.fish),
+and some of them are highly personal.
+Therefore,
+detailed explanation won't be given here.
+
+### Plugin Managers
+
+- [`oh-my-fish`](https://github.com/oh-my-fish/oh-my-fish)
+- [`fisher`](https://github.com/jorgebucaran/fisher)
+
+#### `oh-my-fish` Plugins
+
+Here is a (probably incomplete) list of plugins installed with `oh-my-fish` (excluding `oh-my-fish` itself):
+
+- Plugins
+  - [`git`](https://github.com/jhillyerd/plugin-git)
+  - [`bass`](https://github.com/edc/bass)
+  - [`brew`](https://github.com/oh-my-fish/plugin-brew)
+  - [`colored-man-pages`](https://github.com/PatrickF1/colored_man_pages.fish)
+  - [`export`](https://github.com/oh-my-fish/plugin-export)
+  - [`osx`](https://github.com/oh-my-fish/plugin-osx)
+  - [`wifi-password`](https://github.com/oh-my-fish/plugin-wifi-password)
+  - [`z`](https://github.com/oh-my-fish/plugin-z)
+- Themes
+  - [`trout`](https://github.com/oh-my-fish/theme-trout)
+
+#### `fisher` Plugins
+
+Here is a (definitely complete) list of plugins installed with `fisher` (excluding `fisher` itself):
+
+- [`tmux.fish`](https://github.com/budimanjojo/tmux.fish)
+
+## [My `game` Directory](game)
+
+Contains my Stardew Valley saves.
+Please make sure that you know what you're doing before trying to run `stow game`.
+
+## [My `gitignore` Config](gitignore)
+
+Please run
+
+```
+git config --global core.excludesfile "~/.gitignore"
+```
+
+**AFTER** running
+
+```
+stow gitignore
+```
+
+assuming you placed the `.dotfiles` directory under `~`.
+
+## [My `latex_neovim` Config](latex_neovim)
+
+The `neovim` configuration shown in this repo ([`latex_neovim`](latex_neovim/.config/nvim)) is based on that of [Fireond](https://github.com/Fireond/dotfiles).
+This config is slightly tuned for writing $\LaTeX$ documents,
+and is not guaranteed to work on your machine
+(in fact,
+it doesn't even work perfectly on my machine).
+Therefore,
+using this config is not recommended.
+A more detailed explanation of this config can be found [here](https://space.bilibili.com/171766861/channel/series) in his Bilibili channel.
+
+## [My `shell_gpt` Config](shell_gpt)
+
+This config uses deepseek-coder:6.7b as the model.
+If you want to use other models, please modify [this](shell_gpt/.config/shell_gpt/.sgptrc) file.
+In addition, please replace the user `szh` to your user in the paths in this file.
+
 ## [My `tmux` Config](tmux)
 
 This config is adapted from the `tmux` config of [Dreams of Code](https://www.youtube.com/@dreamsofcode)
@@ -153,76 +227,19 @@ This config is adapted from the `tmux` config of [Dreams of Code](https://www.yo
 - mouse support is enabled
 - window and pane numbering start from 1 instead of 0
 
-## [My `fish` Config](fish)
+## [My `yazi` Config](yazi)
 
-### Aliases
+Here is a list of plugins installed with `ya`:
 
-The aliases can be read from [`config.fish`](fish/.config/fish/config.fish),
-and some of them are highly personal.
-Therefore,
-detailed explanation won't be given here.
+- [full-border.yazi](https://github.com/yazi-rs/plugins/tree/main/full-border.yazi)
+- [git.yazi](https://github.com/yazi-rs/plugins/tree/main/git.yazi)
+- [glow.yazi](https://github.com/Reledia/glow.yazi)
+- [jump-to-char.yazi](https://github.com/yazi-rs/plugins/tree/main/jump-to-char.yazi)
+- [lazygit.yazi](https://github.com/Lil-Dank/lazygit.yazi)
+- [max-preview.yazi](https://github.com/yazi-rs/plugins/tree/main/max-preview.yazi)
+- [vcs-files.yazi](https://github.com/yazi-rs/plugins/tree/main/vcs-files.yazi)
+- [what-size.yazi](https://github.com/pirafrank/what-size.yazi)
 
-### Plugin Managers
+Here is a list of flavors installed with `ya`:
 
-- [`oh-my-fish`](https://github.com/oh-my-fish/oh-my-fish)
-- [`fisher`](https://github.com/jorgebucaran/fisher)
-
-#### `oh-my-fish` Plugins
-
-Here is a (probably incomplete) list of plugins installed with `oh-my-fish` (excluding `oh-my-fish` itself):
-
-- Plugins
-  - [`git`](https://github.com/jhillyerd/plugin-git)
-  - [`bass`](https://github.com/edc/bass)
-  - [`brew`](https://github.com/oh-my-fish/plugin-brew)
-  - [`colored-man-pages`](https://github.com/PatrickF1/colored_man_pages.fish)
-  - [`export`](https://github.com/oh-my-fish/plugin-export)
-  - [`osx`](https://github.com/oh-my-fish/plugin-osx)
-  - [`wifi-password`](https://github.com/oh-my-fish/plugin-wifi-password)
-  - [`z`](https://github.com/oh-my-fish/plugin-z)
-- Themes
-  - [`trout`](https://github.com/oh-my-fish/theme-trout)
-
-#### `fisher` Plugins
-
-- [`tmux.fish`](https://github.com/budimanjojo/tmux.fish)
-
-Here is a definitely complete list of plugins installed with `fisher` (excluding `fisher` itself):
-
-## [My `latex_neovim` Config](latex_neovim)
-
-The `neovim` configuration shown in this repo ([`latex_neovim`](latex_neovim/.config/nvim)) is based on that of [Fireond](https://github.com/Fireond/dotfiles).
-This config is slightly tuned for writing $\LaTeX$ documents,
-and is not guaranteed to work on your machine
-(in fact,
-it doesn't even work perfectly on my machine).
-Therefore,
-using this config is not recommended.
-A more detailed explanation of this config can be found [here](https://space.bilibili.com/171766861/channel/series) in his Bilibili channel.
-
-## [My `game` Directory](game)
-
-Contains my Stardew Valley saves.
-Please make sure that you know what you're doing before trying to run `stow game`.
-
-## [My `gitignore` Config](gitignore)
-
-Please run
-
-```
-git config --global core.excludesfile "~/.gitignore"
-```
-
-**AFTER** running
-
-```
-stow gitignore
-```
-
-assuming you placed the `.dotfiles` directory under `~`.
-
-## [My `shell_gpt` Config](shell_gpt)
-
-This config uses deepseek-coder:6.7b as the model.
-If you want to use other models, please modify [this](shell_gpt/.config/shell_gpt/.sgptrc) file.
-In addition, please replace the user `szh` to your user in the paths in this file.
+- [catppuccin-mocha.yazi](https://github.com/yazi-rs/flavors/tree/main/catppuccin-mocha.yazi)
