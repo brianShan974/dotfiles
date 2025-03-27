@@ -72,7 +72,7 @@ At least least do not make it contain `pyproject.toml`.
 As time goes by,
 you'll see what I mean.
 
-## My [`tmux`](tmux/.config/tmux) Config
+## [My `tmux` Config](tmux/.config/tmux)
 
 This config is adapted from the `tmux` config of [Dreams of Code](https://www.youtube.com/@dreamsofcode)
 
@@ -120,7 +120,7 @@ This config is adapted from the `tmux` config of [Dreams of Code](https://www.yo
 - mouse support is enabled
 - window and pane numbering start from 1 instead of 0
 
-## My [`fish`](fish/.config/fish) Config
+## [My `fish` Config](fish/.config/fish)
 
 ### Aliases
 
@@ -156,7 +156,7 @@ Here is a (probably incomplete) list of plugins installed with `oh-my-fish` (exc
 
 Here is a definitely complete list of plugins installed with `fisher` (excluding `fisher` itself):
 
-## My [`latex_neovim`](latex_neovim/.config/nvim) Config
+## [My `latex_neovim` Config](latex_neovim/.config/nvim)
 
 The `neovim` configuration shown in this repo ([`latex_neovim`](latex_neovim/.config/nvim)) is based on that of [Fireond](https://github.com/Fireond/dotfiles).
 This config is slightly tuned for writing $\LaTeX$ documents,
@@ -167,16 +167,16 @@ Therefore,
 using this config is not recommended.
 A more detailed explanation of this config can be found [here](https://space.bilibili.com/171766861/channel/series) in his Bilibili channel.
 
-## My [`AstroNvim`](https://astronvim.com) Config
+## [My `AstroNvim` Config](https://astronvim.com)
 
 Please refer to [my config](https://github.com/brianShan974/astronvim4-config) where the documentation is not complete.
 
-## My [`game` Directory](game/.config/game)
+## [My `game` Directory](game/.config/game)
 
 Contains my Stardew Valley saves.
 Please make sure that you know what you're doing before trying to run `stow game`.
 
-## My [`gitignore`](gitignore) Config
+## [My `gitignore` Config](gitignore)
 
 Please run
 
@@ -184,10 +184,16 @@ Please run
 git config --global core.excludesfile "~/.gitignore"
 ```
 
-after running
+**AFTER** running
 
 ```
 stow gitignore
 ```
 
 assuming you placed the `.dotfiles` directory under `~`.
+
+## [My `shell_gpt` Config](shell_gpt/.config/shell_gpt/)
+
+This config uses deepseek-coder:6.7b as the model.
+If you want to use other models, please modify [this](shell_gpt/.config/shell_gpt/.sgptrc) file.
+In addition, please replace the user `szh` to your user in the paths in this file.
