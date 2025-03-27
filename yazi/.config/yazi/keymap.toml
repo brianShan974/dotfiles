@@ -487,6 +487,12 @@ keymap = [
     { on = "f", run = "filter", desc = "Apply a filter for the help items" },
 ]
 
+# first-non-directory.yazi
+[[manager.prepend_keymap]]
+on = ["F", "j"]
+run = "plugin first-non-directory"
+desc = "Jumps to the first file"
+
 # jump-to-char.yazi
 [[manager.prepend_keymap]]
 on = "f"

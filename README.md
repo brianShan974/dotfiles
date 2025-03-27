@@ -232,6 +232,7 @@ This config is adapted from the `tmux` config of [Dreams of Code](https://www.yo
 
 Here is a list of plugins installed with `ya`:
 
+- [first-non-directory.yazi](https://github.com/lpanebr/yazi-plugins/tree/main/first-non-directory.yazi), replaced the default `f` key with `F`
 - [full-border.yazi](https://github.com/yazi-rs/plugins/tree/main/full-border.yazi)
 - [git.yazi](https://github.com/yazi-rs/plugins/tree/main/git.yazi)
 - [glow.yazi](https://github.com/Reledia/glow.yazi)

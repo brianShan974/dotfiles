@@ -43,6 +43,11 @@ use = "Reledia/hexyl"
 rev = "228a9ef"
 hash = "cdc65cfe4e60e1bf5afe5769d074fa9c"
 
+[[plugin.deps]]
+use = "lpanebr/yazi-plugins:first-non-directory"
+rev = "ca18a2c"
+hash = "5c20ffa5171dab34042e03d273dddc5b"
+
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
 rev = "fd85060"
