@@ -9,11 +9,44 @@ Basically unusable on Windows.
 
 ### Dependencies
 
+**The dependency list below is incomplete, since I forgot to keep track of this list when I started managing my dotfiles.**
+
 Please install `git` before using these dotfiles and installing other dependencies.
 Since you are here,
 you have probably already installed [`git`](https://git-scm.com/).
 
 Please install [`gnu-stow`](https://www.gnu.org/software/stow/) using your favorite package manager.
+
+Here is a list of all software tools that I have a config for:
+
+- [Cargo](https://doc.rust-lang.org/stable/cargo/) in [cargo](cargo)
+- [clangd](https://clangd.llvm.org/) in [clangd](clangd)
+- [eDEX-UI](https://github.com/GitSquared/edex-ui) in [edex_ui](edex_ui)
+- [fish](https://fishshell.com/) in [fish](fish)
+- [git](https://git-scm.com/) in [gitignore](gitignore)
+- [hyprland](https://hyprland.org/) (deprecated) in [hyprland](hyprland)
+- [IdeaVim](https://lp.jetbrains.com/ideavim/) in [ideavimrc](ideavimrc)
+- [joshuto](https://crates.io/crates/joshuto) (deprecated) in [joshuto](joshuto)
+- [kitty](https://sw.kovidgoyal.net/kitty/) in [kitty](kitty)
+- [neovim](https://neovim.io/) in [latex_neovim](latex_neovim) and [neovim](neovim)
+- [neofetch](https://github.com/dylanaraps/neofetch) in [neofetch](neofetch)
+- [ranger](https://ranger.fm/) (deprecated) in [deprecated_ranger](deprecated_ranger)
+- [rofi](https://davatorium.github.io/rofi/) in [rofi](rofi)
+- [ruff](https://docs.astral.sh/ruff/) in [ruff](ruff)
+- [ShellGPT](https://github.com/TheR1D/shell_gpt) in [shell_gpt](shell_gpt)
+- [skhd](https://github.com/koekeishiya/skhd) in [skhd](skhd)
+- [tmux](https://github.com/tmux/tmux) in [tmux](tmux)
+- [Waybar](https://github.com/Alexays/Waybar) (deprecated) in [waybar](waybar)
+- [xinit](https://linux.die.net/man/1/xinit) in [xinitrc](xinitrc)
+- [yabai](https://github.com/koekeishiya/yabai) (deprecated) in [deprecated_yabai](deprecated_yabai)
+- [yazi](https://yazi-rs.github.io/) in [yazi](yazi)
+- [zathura](https://pwmt.org/projects/zathura/) in [zathura](zathura)
+- [zed](https://zed.dev/) in [zed](zed)
+- [Zsh](https://www.zsh.org/) (deprecated) in [zsh](zsh)
+
+#### My [yazi](https://github.com/sxyazi/yazi) Config Dependencies
+
+- [glow](https://github.com/charmbracelet/glow) is used by the [glow.yazi](https://github.com/Reledia/glow.yazi) plugin to preview markdown files
 
 ### Managing Dotfiles
 
@@ -72,7 +105,7 @@ At least least do not make it contain `pyproject.toml`.
 As time goes by,
 you'll see what I mean.
 
-## [My `tmux` Config](tmux/.config/tmux)
+## [My `tmux` Config](tmux)
 
 This config is adapted from the `tmux` config of [Dreams of Code](https://www.youtube.com/@dreamsofcode)
 
@@ -120,7 +153,7 @@ This config is adapted from the `tmux` config of [Dreams of Code](https://www.yo
 - mouse support is enabled
 - window and pane numbering start from 1 instead of 0
 
-## [My `fish` Config](fish/.config/fish)
+## [My `fish` Config](fish)
 
 ### Aliases
 
@@ -156,7 +189,7 @@ Here is a (probably incomplete) list of plugins installed with `oh-my-fish` (exc
 
 Here is a definitely complete list of plugins installed with `fisher` (excluding `fisher` itself):
 
-## [My `latex_neovim` Config](latex_neovim/.config/nvim)
+## [My `latex_neovim` Config](latex_neovim)
 
 The `neovim` configuration shown in this repo ([`latex_neovim`](latex_neovim/.config/nvim)) is based on that of [Fireond](https://github.com/Fireond/dotfiles).
 This config is slightly tuned for writing $\LaTeX$ documents,
@@ -167,11 +200,7 @@ Therefore,
 using this config is not recommended.
 A more detailed explanation of this config can be found [here](https://space.bilibili.com/171766861/channel/series) in his Bilibili channel.
 
-## [My `AstroNvim` Config](https://astronvim.com)
-
-Please refer to [my config](https://github.com/brianShan974/astronvim4-config) where the documentation is not complete.
-
-## [My `game` Directory](game/.config/game)
+## [My `game` Directory](game)
 
 Contains my Stardew Valley saves.
 Please make sure that you know what you're doing before trying to run `stow game`.
@@ -192,7 +221,7 @@ stow gitignore
 
 assuming you placed the `.dotfiles` directory under `~`.
 
-## [My `shell_gpt` Config](shell_gpt/.config/shell_gpt/)
+## [My `shell_gpt` Config](shell_gpt)
 
 This config uses deepseek-coder:6.7b as the model.
 If you want to use other models, please modify [this](shell_gpt/.config/shell_gpt/.sgptrc) file.
