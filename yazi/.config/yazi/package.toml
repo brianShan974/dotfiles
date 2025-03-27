@@ -13,6 +13,11 @@ use = "yazi-rs/plugins:max-preview"
 rev = "0725851"
 hash = "15b2ff7f6563c14d5b2e93b3e9da35de"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:vcs-files"
+rev = "2730199"
+hash = "5e85dd0baca18119f4d712d81b09eb7c"
+
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
 rev = "fd85060"

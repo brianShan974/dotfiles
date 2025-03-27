@@ -486,3 +486,9 @@ keymap = [
     # Filtering
     { on = "f", run = "filter", desc = "Apply a filter for the help items" },
 ]
+
+# vcs-files.yazi
+[[manager.prepend_keymap]]
+on = ["g", "c"]
+run = "plugin vcs-files"
+desc = "Show git file changes"
