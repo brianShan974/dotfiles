@@ -23,6 +23,11 @@ use = "Lil-Dank/lazygit"
 rev = "9f924e3"
 hash = "2b0c33928986f126d5c5a4cac31a6b46"
 
+[[plugin.deps]]
+use = "pirafrank/what-size"
+rev = "b23e3a4"
+hash = "98e5f5af3efd3ba8bc2db0720187cc83"
+
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
 rev = "fd85060"

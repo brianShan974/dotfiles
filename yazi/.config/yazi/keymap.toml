@@ -496,4 +496,9 @@ desc = "Show git file changes"
 [[manager.prepend_keymap]]
 on = ["g", "i"]
 run = "plugin lazygit"
-desc = "run lazygit"
+desc = "Run lazygit"
+
+[[manager.prepend_keymap]]
+on = [".", "s"]
+run = "plugin what-size"
+desc = "Calc size of selection or cwd"
