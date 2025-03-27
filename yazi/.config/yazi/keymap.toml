@@ -493,12 +493,20 @@ on = ["g", "c"]
 run = "plugin vcs-files"
 desc = "Show git file changes"
 
+# lazygit.yazi
 [[manager.prepend_keymap]]
 on = ["g", "i"]
 run = "plugin lazygit"
 desc = "Run lazygit"
 
+# what-size.yazi
 [[manager.prepend_keymap]]
 on = [".", "s"]
 run = "plugin what-size"
 desc = "Calc size of selection or cwd"
+
+# jump-to-char.yazi
+[[manager.prepend_keymap]]
+on = "f"
+run = "plugin jump-to-char"
+desc = "Jump to char"
