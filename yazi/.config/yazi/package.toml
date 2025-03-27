@@ -38,6 +38,11 @@ use = "yazi-rs/plugins:toggle-pane"
 rev = "2730199"
 hash = "5c9dda1a587b8f5b6f63e3d5375bda88"
 
+[[plugin.deps]]
+use = "Reledia/hexyl"
+rev = "228a9ef"
+hash = "cdc65cfe4e60e1bf5afe5769d074fa9c"
+
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
 rev = "fd85060"

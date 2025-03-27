@@ -249,6 +249,12 @@ sort_sensitive = false
 sort_reverse = false
 sort_translit = false
 
+# glow.yazi
 [[plugin.prepend_previewers]]
 name = "*.md"
 run = "glow"
+
+# hexyl.yazi
+[[plugin.append_previewers]]
+name = "*"
+run = "hexyl"

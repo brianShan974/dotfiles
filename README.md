@@ -47,6 +47,7 @@ Here is a list of all software tools that I have a config for:
 #### My [yazi](https://github.com/sxyazi/yazi) Config Dependencies
 
 - [glow](https://github.com/charmbracelet/glow) is used by the [glow.yazi](https://github.com/Reledia/glow.yazi) plugin to preview markdown files
+- [hexyl](https://github.com/sharkdp/hexyl) is used by the [hexyl.yazi](https://github.com/Reledia/hexyl.yazi) plugin to preview binary files
 
 ### Managing Dotfiles
 
