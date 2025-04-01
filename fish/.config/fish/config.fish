@@ -2,6 +2,8 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+# -------------- Homebrew --------------
+
 # from https://github.com/orgs/Homebrew/discussions/4412#discussioncomment-8314181
 if test -d /home/linuxbrew/.linuxbrew
     # Homebrew is installed on Linux
@@ -28,10 +30,23 @@ else if test -d /opt/homebrew
     set -gx CPPFLAGS "-I/opt/homebrew/opt/openjdk@17/include"
 end
 
-# environment variables
+# -------------- General Fish Config --------------
+
+# ---- environment variables ----
 set -U fish_user_paths ~/.npm-packages/bin $fish_user_paths
 
-# configs
+# ---- editor = nvim ----
+set -gx EDITOR nvim
+
+# ---- fish vim mode ----
+set -g fish_key_bindings fish_vi_key_bindings
+
+# -------------- Aliases and Shortcuts --------------
+
+# ---- clear ----
+alias clc="clear"
+
+# ---- configs ----
 alias dfc="cd ~/.dotfiles/"
 alias dfcreadme="nvim ~/.dotfiles/README.md"
 alias nvimconfig="cd ~/.config/nvim/"
@@ -41,26 +56,15 @@ alias fishconfig="nvim ~/.dotfiles/fish/.config/fish/config.fish"
 alias tmuxconfig="nvim ~/.dotfiles/tmux/.config/tmux/tmux.conf"
 alias snippets="cd ~/.config/nvim/snippets/"
 
-# reloads
-alias fishreload="source ~/.config/fish/config.fish"
-alias tmuxreload="tmux source ~/.config/tmux/tmux.conf"
+# ---- fastfetch ----
+abbr --add ff fastfetch
 
-# python virtual env
-alias vc="python3 -m venv .venv"
-alias va="source .venv/bin/activate.fish"
-alias vr="rm -rf .venv"
-alias vd="deactivate"
+# ---- ICL database ----
+if test -e ~/.pgdb-zs524-zs524
+    source ~/.pgdb-zs524-zs524
+end
 
-# rust
-abbr --add c cargo
-abbr --add cb cargo build
-abbr --add cbr cargo build --release
-abbr --add cr cargo run
-abbr --add crr cargo run --release
-abbr --add cre cargo run --example
-abbr --add crre cargo run --release --example
-
-# important dirs
+# ---- important dirs ----
 if test -d ~/Developer
     alias dev="cd ~/Developer/"
     alias ICL="cd ~/Developer/ICL/"
@@ -74,31 +78,85 @@ alias dt="cd ~/Desktop/"
 alias doc="cd ~/Documents/"
 alias cv="cd ~/Documents/curriculum-vitae/"
 
-# shortcuts
-alias clc="clear"
+# ---- lazygit ----
 abbr --add lg lazygit
 
-# editor = nvim
-set -gx EDITOR nvim
+# ---- neovim ----
 abbr --add n nvim
 
-# fish vim mode
-set -g fish_key_bindings fish_vi_key_bindings
+# ---- on lab machine ----
+if test -e /vol/linux/bin/nfiles
+    alias nfiles="/vol/linux/bin/nfiles"
+end
 
-# ssh to lab machines at ICL
+# ---- python virtual env ----
+alias vc="python3 -m venv .venv"
+alias va="source .venv/bin/activate.fish"
+alias vr="rm -rf .venv"
+alias vd="deactivate"
+
+# ---- raspberry pi ----
+if test -d /media/storage/brian/
+    alias animed="cd /media/storage/brian/videos/番/站外"
+    alias anime="sudo /snap/bin/nvim /etc/transmission-rss.conf && sudo service transmission-rss restart"
+end
+
+# ---- reloads ----
+alias fishreload="source ~/.config/fish/config.fish"
+alias tmuxreload="tmux source ~/.config/tmux/tmux.conf"
+
+# ---- rust ----
+abbr --add c cargo
+abbr --add cb cargo build
+abbr --add cbr cargo build --release
+abbr --add cr cargo run
+abbr --add crr cargo run --release
+abbr --add cre cargo run --example
+abbr --add crre cargo run --release --example
+
+#  ---- ssh to lab machines at ICL ----
 if command -v jot >/dev/null
     alias sshtolab="ssh -t zs524@shell$(jot -r 1 1 5).doc.ic.ac.uk /vol/linux/bin/sshtolab"
 end
 
-# thefuck
+# -------------- Utils --------------
+
+# ---- neofetch ----
+# if command -v neofetch >/dev/null
+#     neofetch
+# end
+
+# ---- thefuck ----
 if command -v thefuck >/dev/null
     thefuck --alias | source
 end
 
-# neofetch
-# if command -v neofetch >/dev/null
-#     neofetch
+# ---- tmux ----
+# if test -d ~/.config/tmux/plugins/
+#     tmux
 # end
+
+# ---- tmux.fish ----
+# set -gx fish_tmux_autostart true
+set -gx fish_tmux_autoquit true
+
+# ---- Added by LM Studio CLI (lms) ----
+set -gx PATH $PATH /Users/szh/.lmstudio/bin
+
+# -------------- Better Tools --------------
+
+# ls
+if command -v eza >/dev/null
+    alias ls="eza --git --icons"
+    alias ll="eza --git --icons -la"
+    alias lt="eza --git --icons -l -T --git-ignore"
+end
+# cat
+if command -v bat >/dev/null
+    alias cat="bat"
+end
+
+# -------------- Functions --------------
 
 # yazi change directory
 function yy
@@ -112,44 +170,4 @@ function yy
         end
     end
     rm -f -- $tmp
-end
-
-# raspberry pi
-if test -d /media/storage/brian/
-    alias animed="cd /media/storage/brian/videos/番/站外"
-    alias anime="sudo /snap/bin/nvim /etc/transmission-rss.conf && sudo service transmission-rss restart"
-end
-
-# lab machine
-if test -e /vol/linux/bin/nfiles
-    alias nfiles="/vol/linux/bin/nfiles"
-end
-
-# ICL database
-if test -e ~/.pgdb-zs524-zs524
-    source ~/.pgdb-zs524-zs524
-end
-
-# tmux.fish
-# set -gx fish_tmux_autostart true
-set -gx fish_tmux_autoquit true
-
-# tmux
-# if test -d ~/.config/tmux/plugins/
-#     tmux
-# end
-
-# Added by LM Studio CLI (lms)
-set -gx PATH $PATH /Users/szh/.lmstudio/bin
-
-# better tools
-# ls
-if command -v eza >/dev/null
-    alias ls="eza --git --icons"
-    alias ll="eza --git --icons -la"
-    alias lt="eza --git --icons -l -T --git-ignore"
-end
-# cat
-if command -v bat >/dev/null
-    alias cat="bat"
 end
