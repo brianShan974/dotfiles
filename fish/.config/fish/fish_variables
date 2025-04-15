@@ -5,7 +5,8 @@ SETUVAR __tf_func:function\x20__tf_alias\x20\x2dd\x20\x22Correct\x20your\x20prev
 SETUVAR __tf_vers:The\x20Fuck\x203\x2e32\x20using\x20Python\x203\x2e12\x2e3\x20and\x20Fish\x20Shell\x203\x2e7\x2e1
 SETUVAR _fisher_budimanjojo_2F_tmux_2E_fish_files:\x7e/\x2econfig/fish/conf\x2ed/tmux\x2eextra\x2econf\x1e\x7e/\x2econfig/fish/conf\x2ed/tmux\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/tmux\x2eonly\x2econf
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ebudimanjojo/tmux\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ebudimanjojo/tmux\x2efish\x1ereitzig/sdkman\x2dfor\x2dfish\x40v2\x2e1\x2e0
+SETUVAR _fisher_reitzig_2F_sdkman_2D_for_2D_fish_40_v2_2E_31_2E_30__files:\x7e/\x2econfig/fish/functions/sdk\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/sdk\x2efish\x1e\x7e/\x2econfig/fish/completions/sdk\x2efish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:\x2dr
