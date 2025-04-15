@@ -44,7 +44,10 @@ set -g fish_key_bindings fish_vi_key_bindings
 # -------------- Aliases and Shortcuts --------------
 
 # ---- clear ----
-alias clc="clear"
+abbr --add b btop
+
+# ---- clear ----
+abbr --add clc clear
 
 # ---- configs ----
 alias dfc="cd ~/.dotfiles/"
