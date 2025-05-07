@@ -31,7 +31,7 @@ Here is a list of all software tools that I have a config for:
 - [IdeaVim](https://lp.jetbrains.com/ideavim/) in [ideavimrc](ideavimrc)
 - [joshuto](https://crates.io/crates/joshuto) (deprecated) in [deprecated_joshuto](deprecated_joshuto)
 - [kitty](https://sw.kovidgoyal.net/kitty/) in [kitty](kitty)
-- [neovim](https://neovim.io/) in [latex_neovim](latex_neovim) and [neovim](neovim)
+- [neovim](https://neovim.io/) in [latex_neovim](latex_neovim), [neovim](neovim) and [lazyvim](lazyvim)
 - [neofetch](https://github.com/dylanaraps/neofetch) (deprecated) in [deprecated_neofetch](deprecated_neofetch)
 - [ranger](https://ranger.fm/) (deprecated) in [deprecated_ranger](deprecated_ranger)
 - [rofi](https://davatorium.github.io/rofi/) in [rofi](rofi)
@@ -64,10 +64,16 @@ clone this repo under `~`
 and
 (I personally like to)
 name this directory `.dotfiles`.
-You may want to run this command:
+If you don't want the submodules, you may want to run this command:
 
 ```
 git clone https://github.com/brianShan974/dotfiles.git ~/.dotfiles
+```
+
+If you do want the full config, please run this command instead:
+
+```
+git clone --recurse-submodules https://github.com/brianShan974/dotfiles.git ~/.dotfiles
 ```
 
 Then you can `cd` into this directory,
@@ -180,6 +186,12 @@ it doesn't even work perfectly on my machine).
 Therefore,
 using this config is not recommended.
 A more detailed explanation of this config can be found [here](https://space.bilibili.com/171766861/channel/series) in his Bilibili channel.
+
+## [My `lazyvim` Config](lazyvim)
+
+This is the `neovim` config that I'm currently using.
+It is added to this repo as a git submodule.
+Please give me a star in [this](https://github.com/brianShan974/lazyvim-config) repo if you like my config.
 
 ## [My `shell_gpt` Config](shell_gpt)
 
