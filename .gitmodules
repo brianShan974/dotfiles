@@ -7,9 +7,6 @@
 [submodule "zsh/.oh-my-zsh/custom/plugins/fzf-tab"]
 	path = zsh/.oh-my-zsh/custom/plugins/fzf-tab
 	url = https://github.com/Aloxaf/fzf-tab.git
-[submodule "astronvim/.config/nvim"]
-	path = astronvim/.config/nvim
-	url = https://github.com/AstroNvim/AstroNvim.git
 [submodule "zsh/.oh-my-zsh/custom/themes/powerlevel10k"]
 	path = zsh/.oh-my-zsh/custom/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
