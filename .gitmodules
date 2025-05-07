@@ -10,3 +10,6 @@
 [submodule "zsh/.oh-my-zsh/custom/themes/powerlevel10k"]
 	path = zsh/.oh-my-zsh/custom/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "lazyvim/.config/nvim"]
+	path = lazyvim/.config/nvim
+	url = https://github.com/brianShan974/lazyvim-config.git
