@@ -165,16 +165,10 @@ Please make sure that you know what you're doing before trying to run `stow game
 Please run
 
 ```
-git config --global core.excludesfile "~/.gitignore"
+git config --global core.excludesfile "~/.dotfiles/gitignore/.gitignore"
 ```
 
-**AFTER** running
-
-```
-stow gitignore
-```
-
-assuming you placed the `.dotfiles` directory under `~`.
+assuming you placed the `.dotfiles` directory under `~`, because for some reason, I just can't `stow gitignore`.
 
 ## [My `latex_neovim` Config](latex_neovim)
 
