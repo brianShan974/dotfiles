@@ -113,9 +113,10 @@ abbr --add c cargo
 abbr --add cb cargo build
 abbr --add cbr cargo build --release
 abbr --add cr cargo run
-abbr --add crr cargo run --release
 abbr --add cre cargo run --example
+abbr --add crr cargo run --release
 abbr --add crre cargo run --release --example
+abbr --add ct cargo test
 
 #  ---- ssh to lab machines at ICL ----
 if command -v jot >/dev/null
