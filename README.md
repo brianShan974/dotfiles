@@ -20,7 +20,7 @@ Please install [`gnu-stow`](https://www.gnu.org/software/stow/) using your favor
 Here is a list of all software tools that I have a config for:
 
 - [bottom](https://bottom.pages.dev/) in [bottom](bottom)
-- [btop](https://github.com/aristocratos/btop) (deprecated) in [deprecated_btop](deprecated_btop)
+- [btop](https://github.com/aristocratos/btop) in [btop](btop)
 - [Cargo](https://doc.rust-lang.org/stable/cargo/) in [cargo](cargo)
 - [clangd](https://clangd.llvm.org/) in [clangd](clangd)
 - [eDEX-UI](https://github.com/GitSquared/edex-ui) in [edex_ui](edex_ui)
