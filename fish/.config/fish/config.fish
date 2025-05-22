@@ -79,7 +79,8 @@ else
 end
 alias dt="cd ~/Desktop/"
 alias doc="cd ~/Documents/"
-alias cv="cd ~/Documents/curriculum-vitae/"
+alias cven="cd ~/Documents/curriculum-vitae/"
+alias cvcn="cd ~/Documents/curriculum-vitae-cn/"
 
 # ---- lazygit ----
 abbr --add lg lazygit
