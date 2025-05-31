@@ -2,7 +2,7 @@
 # If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
 "$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
 
-[manager]
+[mgr]
 
 keymap = [
     { on = "<Esc>", run = "escape", desc = "Exit visual mode, clear selected, or cancel search" },
@@ -488,37 +488,37 @@ keymap = [
 ]
 
 # first-non-directory.yazi
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = ["F", "j"]
 run = "plugin first-non-directory"
 desc = "Jumps to the first file"
 
 # jump-to-char.yazi
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = "f"
 run = "plugin jump-to-char"
 desc = "Jump to char"
 
 # lazygit.yazi
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = ["g", "i"]
 run = "plugin lazygit"
 desc = "Run lazygit"
 
 # toggle-pane.yazi
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = "T"
 run = "plugin toggle-pane max-preview"
 desc = "Maximize or restore the preview pane"
 
 # what-size.yazi
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = [".", "s"]
 run = "plugin what-size"
 desc = "Calc size of selection or cwd"
 
 # vcs-files.yazi
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = ["g", "c"]
 run = "plugin vcs-files"
 desc = "Show git file changes"
