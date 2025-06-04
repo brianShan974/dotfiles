@@ -43,11 +43,14 @@ set -g fish_key_bindings fish_vi_key_bindings
 
 # -------------- Aliases and Shortcuts --------------
 
-# ---- clear ----
+# ---- btop ----
 abbr --add b btop
 
 # ---- clear ----
 abbr --add clc clear
+
+# ---- codecrafters ----
+abbr --add cct codecrafters test
 
 # ---- configs ----
 alias dfc="cd ~/.dotfiles/"
