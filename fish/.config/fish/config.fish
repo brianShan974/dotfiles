@@ -51,6 +51,7 @@ abbr --add clc clear
 
 # ---- codecrafters ----
 abbr --add cct codecrafters test
+abbr --add ccs codecrafters submit
 
 # ---- configs ----
 alias dfc="cd ~/.dotfiles/"
