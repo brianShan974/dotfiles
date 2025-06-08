@@ -1,17 +1,17 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "b12a9ab"
-hash = "1f3dad061209081a6b04dd6ff2cb06c7"
+rev = "63f9650"
+hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "b12a9ab"
-hash = "e0ada736ea676c2bbb3ec705a49526ef"
+rev = "63f9650"
+hash = "bf6f074cd41ee33c3360341d168f9733"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:vcs-files"
-rev = "b12a9ab"
-hash = "36405f8781fcaf33ceab24dffd5cea19"
+rev = "63f9650"
+hash = "70898957e9e4c1ca291ff26e8fdc434"
 
 [[plugin.deps]]
 use = "Lil-Dank/lazygit"
@@ -20,13 +20,13 @@ hash = "a1fa2b3e1826c3a34804ea8c548e9f80"
 
 [[plugin.deps]]
 use = "pirafrank/what-size"
-rev = "f1c6b69"
-hash = "6e789212eb41d937bab04877ca361099"
+rev = "0a4904c"
+hash = "fca231a128488a554823374f8f6d5241"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:jump-to-char"
-rev = "b12a9ab"
-hash = "a670c03eb3760812e044a24f94cedc55"
+rev = "63f9650"
+hash = "30fc0b37f03a597b92d387268319450f"
 
 [[plugin.deps]]
 use = "Reledia/glow"
@@ -35,8 +35,8 @@ hash = "f9ee1436e3b853508d87f7d49dce56e6"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:toggle-pane"
-rev = "b12a9ab"
-hash = "5c9dda1a587b8f5b6f63e3d5375bda88"
+rev = "63f9650"
+hash = "d5d4f3527592da5fbe77fd6f51815f80"
 
 [[plugin.deps]]
 use = "Reledia/hexyl"
@@ -50,5 +50,5 @@ hash = "5c20ffa5171dab34042e03d273dddc5b"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
-rev = "68326b4"
-hash = "2ac87e1b3a61f5887472899e86535d29"
+rev = "d04a298"
+hash = "288a0dedd5d13b28605cf82c05326dcd"
