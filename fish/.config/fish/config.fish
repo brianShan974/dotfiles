@@ -46,6 +46,9 @@ set -g fish_key_bindings fish_vi_key_bindings
 # ---- btop ----
 abbr --add b btop
 
+# ---- cargo update ----
+abbr --add cup cargo install-update -a
+
 # ---- clear ----
 abbr --add clc clear
 
