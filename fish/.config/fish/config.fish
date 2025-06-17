@@ -43,6 +43,9 @@ set -g fish_key_bindings fish_vi_key_bindings
 
 # -------------- Aliases and Shortcuts --------------
 
+# ---- books ----
+alias bk="cd ~/Developer/cloned/books/"
+
 # ---- btop ----
 abbr --add b btop
 
