@@ -45,6 +45,7 @@ set -g fish_key_bindings fish_vi_key_bindings
 
 # ---- books ----
 alias bk="cd ~/Developer/cloned/books/"
+abbr --add ob mdbook serve --open
 
 # ---- btop ----
 abbr --add b btop
