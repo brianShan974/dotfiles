@@ -47,6 +47,9 @@ set -g fish_key_bindings fish_vi_key_bindings
 alias bk="cd ~/Developer/cloned/books/"
 abbr --add ob mdbook serve --open
 
+# ---- brew ----
+alias bu="brew update && brew upgrade"
+
 # ---- btop ----
 abbr --add b btop
 
