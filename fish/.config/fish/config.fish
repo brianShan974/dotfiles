@@ -107,6 +107,9 @@ if test -e /vol/linux/bin/nfiles
     alias nfiles="/vol/linux/bin/nfiles"
 end
 
+# ---- perlbrew ----
+. ~/perl5/perlbrew/etc/perlbrew.fish
+
 # ---- python virtual env ----
 alias vc="python3 -m venv .venv"
 alias va="source .venv/bin/activate.fish"
