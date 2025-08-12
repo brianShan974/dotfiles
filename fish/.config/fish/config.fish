@@ -110,11 +110,19 @@ end
 # ---- perlbrew ----
 . ~/perl5/perlbrew/etc/perlbrew.fish
 
+# ---- python ----
 # ---- python virtual env ----
-alias vc="python3 -m venv .venv"
+if command -v uv >/dev/null
+    abbr --add vc uv venv
+else
+    alias vc="python3 -m venv .venv"
+end
 alias va="source .venv/bin/activate.fish"
 alias vr="rm -rf .venv"
 alias vd="deactivate"
+# ---- uv ----
+abbr --add upu uv python upgrade
+abbr --add usu uv self update
 
 # ---- raspberry pi ----
 if test -d /media/storage/brian/
@@ -135,6 +143,9 @@ abbr --add cre cargo run --example
 abbr --add crr cargo run --release
 abbr --add crre cargo run --release --example
 abbr --add ct cargo test
+
+abbr --add ru rustup self update
+abbr --add rsu rustup self update
 
 #  ---- ssh to lab machines at ICL ----
 if command -v jot >/dev/null
