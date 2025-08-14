@@ -138,6 +138,8 @@ alias tmuxreload="tmux source ~/.config/tmux/tmux.conf"
 abbr --add c cargo
 abbr --add cb cargo build
 abbr --add cbr cargo build --release
+abbr --add cf cargo fmt
+abbr --add cfc cargo fmt -- --check
 abbr --add cr cargo run
 abbr --add cre cargo run --example
 abbr --add crr cargo run --release
