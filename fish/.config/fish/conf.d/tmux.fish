@@ -4,8 +4,8 @@ set -q fish_tmux_autostarted || set -gx fish_tmux_autostarted false
 # set the configuration path
 if test -e "$HOME/.tmux.conf"
     set -q fish_tmux_config || set -gx fish_tmux_config "$HOME/.tmux.conf"
-else if test -e (set -q XDG_CONFIG_HOME || echo "$HOME/.config")/tmux/tmux.conf
-    set -q fish_tmux_config || set -gx fish_tmux_config (set -q XDG_CONFIG_HOME || echo "$HOME/.config")/tmux/tmux.conf
+else if test -e "$(set -q XDG_CONFIG_HOME && echo $XDG_CONFIG_HOME || echo "$HOME/.config")/tmux/tmux.conf"
+    set -q fish_tmux_config || set -gx fish_tmux_config (set -q XDG_CONFIG_HOME && echo $XDG_CONFIG_HOME || echo "$HOME/.config")/tmux/tmux.conf
 else
     set -q fish_tmux_config || set -gx fish_tmux_config "$HOME/.tmux.conf"
 end
@@ -35,7 +35,12 @@ function _fish_tmux_create_aliases --on-variable fish_tmux_no_alias
         alias tds=_fish_tmux_directory_session
         alias tksv="command tmux kill-server"
         alias tl="command tmux list-sessions"
-        alias tmuxconf="$EDITOR $fish_tmux_config"
+
+        # only add the alias when $EDITOR variable is set
+        # ref: https://github.com/budimanjojo/tmux.fish/issues/17
+        if set -q EDITOR
+            alias tmuxconf="$EDITOR $fish_tmux_config"
+        end
         # `-t` and `-s` flag for tmux commands require argument
         # so we remove the flag when called without argument and run normally when called with argument
         # see: https://github.com/ohmyzsh/ohmyzsh/issues/12230
@@ -128,7 +133,7 @@ function _fish_tmux_plugin_run
     end
 
     # if failed, just run tmux, fixing the TERM variable if requested
-    if test $status -ne 0
+    if test "$fish_tmux_autoconnect" = false || test $status -ne 0
         if test "$fish_tmux_fixterm" = true
             set -a tmux_cmd -f $_fish_tmux_fixed_config
         else if test -e "$fish_tmux_config"
