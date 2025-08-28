@@ -49,12 +49,13 @@ abbr --add ob mdbook serve --open
 
 # ---- brew ----
 alias bu="brew update && brew upgrade"
+abbr --add bi brew install
+abbr --add bic brew install --cask
+abbr --add bl brew list
+abbr --add br brew uninstall
 
 # ---- btop ----
 abbr --add b btop
-
-# ---- cargo update ----
-abbr --add cup cargo install-update -a
 
 # ---- clear ----
 abbr --add clc clear
@@ -69,7 +70,7 @@ alias dfcreadme="nvim ~/.dotfiles/README.md"
 alias nvimconfig="cd ~/.config/nvim/"
 alias astroconfig="cd ~/.dotfiles/astronvim4/.config/nvim/"
 alias lazyconfig="cd ~/.dotfiles/lazyvim/.config/nvim/"
-alias fishconfig="nvim ~/.dotfiles/fish/.config/fish/config.fish"
+alias fishconfig="nvim ~/.dotfiles/fish/.config/fish/config.fish && source ~/.config/fish/config.fish"
 alias tmuxconfig="nvim ~/.dotfiles/tmux/.config/tmux/tmux.conf"
 alias snippets="cd ~/.config/nvim/snippets/"
 
@@ -131,22 +132,29 @@ if test -d /media/storage/brian/
 end
 
 # ---- reloads ----
-alias fishreload="source ~/.config/fish/config.fish"
+alias fr="source ~/.config/fish/config.fish"
 alias tmuxreload="tmux source ~/.config/tmux/tmux.conf"
 
 # ---- rust ----
 abbr --add c cargo
+abbr --add ccl cargo clean
+abbr --add cch cargo check
 abbr --add cb cargo build
 abbr --add cbr cargo build --release
 abbr --add cf cargo fmt
 abbr --add cfc cargo fmt -- --check
+abbr --add ci cargo install
+abbr --add cil cargo install --list
+abbr --add cl cargo --list
 abbr --add cr cargo run
 abbr --add cre cargo run --example
 abbr --add crr cargo run --release
 abbr --add crre cargo run --release --example
+abbr --add cs cargo search
 abbr --add ct cargo test
+abbr --add cup cargo install-update -a
 
-abbr --add ru rustup self update
+abbr --add ru rustup update
 abbr --add rsu rustup self update
 
 #  ---- ssh to lab machines at ICL ----
@@ -184,6 +192,9 @@ end
 # ---- tmux.fish ----
 # set -gx fish_tmux_autostart true
 set -gx fish_tmux_autoquit true
+
+# ---- tmux.fish ----
+alias u="brew update && brew upgrade && cargo install-update -a && uv self update && rustup self update && rustup update && ya pkg upgrade"
 
 # ---- Added by LM Studio CLI (lms) ----
 set -gx PATH $PATH /Users/szh/.lmstudio/bin
