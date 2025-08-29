@@ -194,8 +194,9 @@ end
 # set -gx fish_tmux_autostart true
 set -gx fish_tmux_autoquit true
 
-# ---- tmux.fish ----
+# ---- update ----
 alias u="brew update && brew upgrade && cargo install-update -a && uv self update && rustup self update && rustup update && ya pkg upgrade"
+abbr --add tu topgrade
 
 # ---- Added by LM Studio CLI (lms) ----
 set -gx PATH $PATH /Users/szh/.lmstudio/bin
@@ -204,9 +205,9 @@ set -gx PATH $PATH /Users/szh/.lmstudio/bin
 
 # ls
 if command -v eza >/dev/null
-    alias ls="eza --git --icons"
-    alias ll="eza --git --icons -la"
-    alias lt="eza --git --icons -l -T --git-ignore"
+    alias ls="eza --git --icons --group-directories-first"
+    alias ll="eza --git --icons -la --group-directories-first"
+    alias lt="eza --git --icons -l -T --git-ignore --group-directories-first"
 end
 # cat
 if command -v bat >/dev/null
