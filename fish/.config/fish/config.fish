@@ -174,8 +174,8 @@ alias umountpi="umount ~/raspberrypi_root"
 alias umountpihome="umount ~/raspberrypi_home"
 alias umountpistorage="umount ~/raspberrypi_storage/"
 
-# ---- wezterm ----
-abbr --add tk tokei
+# ---- tokei ----
+abbr --add tk tokei --num-format commas
 
 # ---- wezterm ----
 alias wezconfig="nvim ~/.wezterm.lua"
