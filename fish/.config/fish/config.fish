@@ -154,6 +154,7 @@ abbr --add crre cargo run --release --example
 abbr --add cs cargo search
 abbr --add ct cargo test
 abbr --add cup cargo install-update -a
+abbr --add cui cargo uninstall
 
 abbr --add ru rustup update
 abbr --add rsu rustup self update
@@ -173,6 +174,23 @@ alias umountpi="umount ~/raspberrypi_root"
 alias umountpihome="umount ~/raspberrypi_home"
 alias umountpistorage="umount ~/raspberrypi_storage/"
 
+# ---- wezterm ----
+abbr --add tk tokei
+
+# ---- wezterm ----
+alias wezconfig="nvim ~/.wezterm.lua"
+
+# ---- update ----
+alias u="brew update && brew upgrade && cargo install-update -a && uv self update && rustup self update && rustup update && ya pkg upgrade"
+abbr --add tu topgrade
+
+# ---- zellij ----
+abbr --add zj zellij
+abbr --add za zellij attach
+abbr --add zk zellij kill-session
+abbr --add zl zellij list-sessions
+alias zellijconfig="nvim ~/.config/zellij/config.kdl"
+
 # -------------- Utils --------------
 
 # ---- neofetch ----
@@ -185,22 +203,6 @@ if command -v thefuck >/dev/null
     thefuck --alias | source
 end
 
-# ---- tmux ----
-# if test -d ~/.config/tmux/plugins/
-#     tmux
-# end
-
-# ---- tmux.fish ----
-# set -gx fish_tmux_autostart true
-set -gx fish_tmux_autoquit true
-
-# ---- update ----
-alias u="brew update && brew upgrade && cargo install-update -a && uv self update && rustup self update && rustup update && ya pkg upgrade"
-abbr --add tu topgrade
-
-# ---- Added by LM Studio CLI (lms) ----
-set -gx PATH $PATH /Users/szh/.lmstudio/bin
-
 # -------------- Better Tools --------------
 
 # ls
@@ -209,6 +211,7 @@ if command -v eza >/dev/null
     alias ll="eza --git --icons -la --group-directories-first"
     alias lt="eza --git --icons -l -T --git-ignore --group-directories-first"
 end
+
 # cat
 if command -v bat >/dev/null
     alias cat="bat"
@@ -230,6 +233,48 @@ function yy
     rm -f -- $tmp
 end
 
+# -------------- Configs --------------
+
+# ---- tmux ----
+# if test -d ~/.config/tmux/plugins/
+#     tmux
+# end
+
+# ---- tmux.fish ----
+# set -gx fish_tmux_autostart true
+set -gx fish_tmux_autoquit true
+
+# -------------- Integration --------------
+
+# The following snippet is meant to be used like this in your fish config:
+#
+# if status is-interactive
+#     # Configure auto-attach/exit to your likings (default is off).
+#     # set ZELLIJ_AUTO_ATTACH true
+#     # set ZELLIJ_AUTO_EXIT true
+#     eval (zellij setup --generate-auto-start fish | string collect)
+# end
+
+if not set -q ZELLIJ
+    if test "$ZELLIJ_AUTO_ATTACH" = true
+        zellij attach -c
+    else
+        zellij
+    end
+
+    if test "$ZELLIJ_AUTO_EXIT" = true
+        kill $fish_pid
+    end
+end
+
+# -------------- Added Automatically --------------
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/szh/.lmstudio/bin
+
 # Added by OrbStack: command-line tools and integration
 # This won't be added again if you remove it.
 source ~/.orbstack/shell/init2.fish 2>/dev/null || :
+
+# -------------- Starship --------------
+starship init fish | source
