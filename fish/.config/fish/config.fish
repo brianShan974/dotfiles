@@ -108,6 +108,9 @@ if test -e /vol/linux/bin/nfiles
     alias nfiles="/vol/linux/bin/nfiles"
 end
 
+# ---- onefetch ----
+abbr --add of onefetch
+
 # ---- perlbrew ----
 . ~/perl5/perlbrew/etc/perlbrew.fish
 
