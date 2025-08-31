@@ -10,7 +10,7 @@ config.window_background_image_hsb = dimmer
 
 -- font
 config.font = wezterm.font("CaskaydiaCove Nerd Font")
-config.font_size = 13
+config.font_size = 20
 
 -- fullscreen
 local mux = wezterm.mux
