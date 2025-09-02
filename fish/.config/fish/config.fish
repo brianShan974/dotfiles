@@ -140,6 +140,7 @@ alias tmuxreload="tmux source ~/.config/tmux/tmux.conf"
 
 # ---- rust ----
 abbr --add c cargo
+abbr --add ca cargo add
 abbr --add cch cargo check
 abbr --add ccl cargo clean
 abbr --add ccp cargo clippy
@@ -147,6 +148,7 @@ abbr --add cb cargo build
 abbr --add cbr cargo build --release
 abbr --add cf cargo fmt
 abbr --add cfc cargo fmt -- --check
+abbr --add cfg cargo flamegraph
 abbr --add ci cargo install
 abbr --add cil cargo install --list
 abbr --add cl cargo --list
