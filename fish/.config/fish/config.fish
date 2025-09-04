@@ -64,6 +64,9 @@ abbr --add clc clear
 abbr --add cct codecrafters test
 abbr --add ccs codecrafters submit
 
+# ---- dir-assistant ----
+abbr --add da dir-assistant
+
 # ---- configs ----
 alias dfc="cd ~/.dotfiles/"
 alias dfcreadme="nvim ~/.dotfiles/README.md"
