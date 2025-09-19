@@ -288,7 +288,7 @@ source ~/.orbstack/shell/init2.fish 2>/dev/null || :
 starship init fish | source
 
 # -------------- Atuin --------------
-atuin init fish | source
+# atuin init fish | source
 
 # -------------- skim --------------
 sk --shell fish | source
