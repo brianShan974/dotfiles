@@ -7,7 +7,6 @@
     // - "dark": Use the theme indicated by the "dark" field
     "language_models": {
         "openai": {
-            "version": "1"
         }
     },
     "theme": {
@@ -27,7 +26,7 @@
     // Features that can be globally enabled or disabled
     "features": {
         // Which inline completion provider to use.
-        "inline_completion_provider": "copilot"
+        "edit_prediction_provider": "copilot"
     },
     // The name of a font to use for rendering text in the editor
     "buffer_font_family": "Zed Plex Mono",
@@ -160,7 +159,7 @@
     "always_treat_brackets_as_autoclosed": false,
     // Controls whether inline completions are shown immediately (true)
     // or manually by triggering `editor::ShowInlineCompletion` (false).
-    "show_inline_completions": true,
+    "show_edit_predictions": true,
     // Whether to show tabs and spaces in the editor.
     // This setting can take three values:
     //
@@ -217,7 +216,7 @@
         // Whether to show selected symbol occurrences in the scrollbar.
         "selected_symbol": true,
         // Whether to show diagnostic indicators in the scrollbar.
-        "diagnostics": true
+        "diagnostics": "all"
     },
     // What to do when multibuffer is double clicked in some of its excerpts
     // (parts of singleton buffers).
@@ -356,7 +355,7 @@
     },
     "chat_panel": {
         // Whether to show the chat panel button in the status bar.
-        "button": true,
+        "button": "always",
         // Where to the chat panel. Can be 'left' or 'right'.
         "dock": "right",
         // Default width of the chat panel.
@@ -375,13 +374,12 @@
         // Default width of the notification panel.
         "default_width": 380
     },
-    "assistant": {
+    "agent": {
         // Version of this setting.
         "default_model": {
             "provider": "openai",
             "model": "gpt-4o"
         },
-        "version": "2",
         // Whether the assistant is enabled.
         "enabled": true,
         // Whether to show the assistant panel button in the status bar.
@@ -538,7 +536,7 @@
             // "delay_ms": 600
         }
     },
-    "inline_completions": {
+    "edit_predictions": {
         // A list of globs representing files that inline completions should be disabled for.
         "disabled_globs": [".env"]
     },
