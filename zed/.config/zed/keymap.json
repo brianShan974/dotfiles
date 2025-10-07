@@ -2,17 +2,17 @@
     {
         "bindings": {
             "ctrl-e": "workspace::ToggleLeftDock",
-            "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
-            "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
-            "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-            "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"]
+            "ctrl-h": "workspace::ActivatePaneLeft",
+            "ctrl-j": "workspace::ActivatePaneDown",
+            "ctrl-k": "workspace::ActivatePaneUp",
+            "ctrl-l": "workspace::ActivatePaneRight"
         }
     },
     {
         "context": "Editor",
         "bindings": {
             "ctrl-right": "pane::ActivateNextItem",
-            "ctrl-left": "pane::ActivatePrevItem",
+            "ctrl-left": "pane::ActivatePreviousItem",
             "ctrl-[": "pane::GoBack",
             "ctrl-]": "pane::GoForward"
         }
