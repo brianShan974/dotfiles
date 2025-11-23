@@ -1,2 +1,5 @@
 [build]
 rustflags = "-l framework=Accelerate"
+
+[package.metadata.darwin]
+frameworks = ["AppKit", "LaunchServices"]
