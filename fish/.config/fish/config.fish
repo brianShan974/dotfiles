@@ -41,6 +41,9 @@ set -gx EDITOR nvim
 # ---- fish vim mode ----
 set -g fish_key_bindings fish_vi_key_bindings
 
+# ---- fish vim mode ----
+set -g fish_color_command green
+
 # -------------- Aliases and Shortcuts --------------
 
 # ---- books ----
