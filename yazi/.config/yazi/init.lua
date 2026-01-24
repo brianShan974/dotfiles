@@ -9,3 +9,6 @@ require("starship"):setup()
 
 -- full-border.yazi configuration
 require("full-border"):setup()
+
+-- git.yazi configuration
+require("git"):setup()

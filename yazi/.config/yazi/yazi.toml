@@ -193,6 +193,10 @@ previewers = [
     # Fallback
     { url = "*", run = "file" },
 ]
+prepend_fetchers = [
+    { id = "git", url = "*", run = "git" },
+    { id = "git", url = "*/", run = "git" },
+]
 prepend_previewers = [
     { name = "*.ipynb", run = "nbpreview" },
     { name = "*.csv", run = "duckdb" },
