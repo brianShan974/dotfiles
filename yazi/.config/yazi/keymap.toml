@@ -275,6 +275,11 @@ prepend_keymap = [
         "g",
         "u",
     ], run = "plugin duckdb -ui", desc = "open with duckdb ui" },
+
+    { on = [
+        ".",
+        "s",
+    ], run = "plugin what-size", desc = "Calc size of selection or cwd" },
 ]
 
 [tasks]
