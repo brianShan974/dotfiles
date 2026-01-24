@@ -3,5 +3,10 @@ use = "AnirudhG07/nbpreview"
 rev = "b504594"
 hash = "b83919985400521dee78e1c352b5d9db"
 
+[[plugin.deps]]
+use = "wylie102/duckdb"
+rev = "3f8c863"
+hash = "87b9233a74325e95011670ed20bbd0d4"
+
 [flavor]
 deps = []

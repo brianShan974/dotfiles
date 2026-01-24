@@ -265,6 +265,19 @@ keymap = [
     { on = "<F1>", run = "help", desc = "Open help" },
 ]
 
+prepend_keymap = [
+    { on = "H", run = "plugin duckdb -1", desc = "Scroll one column to the left" },
+    { on = "L", run = "plugin duckdb +1", desc = "Scroll one column to the right" },
+    { on = [
+        "g",
+        "o",
+    ], run = "plugin duckdb -open", desc = "open with duckdb" },
+    { on = [
+        "g",
+        "u",
+    ], run = "plugin duckdb -ui", desc = "open with duckdb ui" },
+]
+
 [tasks]
 
 keymap = [
