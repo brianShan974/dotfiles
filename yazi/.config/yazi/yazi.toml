@@ -193,6 +193,7 @@ previewers = [
     # Fallback
     { url = "*", run = "file" },
 ]
+prepend_previewers = [{ name = "*.ipynb", run = "nbpreview" }]
 
 [input]
 cursor_blink = false
