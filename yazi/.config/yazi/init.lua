@@ -6,3 +6,6 @@ require("duckdb"):setup({
 
 -- starship.yazi configuration
 require("starship"):setup()
+
+-- full-border.yazi configuration
+require("full-border"):setup()
