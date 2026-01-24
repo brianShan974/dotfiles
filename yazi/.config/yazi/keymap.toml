@@ -3,7 +3,6 @@
 "$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
 
 [mgr]
-
 keymap = [
     { on = "<Esc>", run = "escape", desc = "Exit visual mode, clear selection, or cancel search" },
     { on = "<C-[>", run = "escape", desc = "Exit visual mode, clear selection, or cancel search" },
@@ -279,7 +278,6 @@ prepend_keymap = [
 ]
 
 [tasks]
-
 keymap = [
     { on = "<Esc>", run = "close", desc = "Close task manager" },
     { on = "<C-[>", run = "close", desc = "Close task manager" },
@@ -301,7 +299,6 @@ keymap = [
 ]
 
 [spot]
-
 keymap = [
     { on = "<Esc>", run = "close", desc = "Close the spot" },
     { on = "<C-[>", run = "close", desc = "Close the spot" },
@@ -327,7 +324,6 @@ keymap = [
 ]
 
 [pick]
-
 keymap = [
     { on = "<Esc>", run = "close", desc = "Cancel pick" },
     { on = "<C-[>", run = "close", desc = "Cancel pick" },
@@ -346,7 +342,6 @@ keymap = [
 ]
 
 [input]
-
 keymap = [
     { on = "<C-c>", run = "close", desc = "Cancel input" },
     { on = "<Enter>", run = "close --submit", desc = "Submit input" },
@@ -470,7 +465,6 @@ keymap = [
 ]
 
 [confirm]
-
 keymap = [
     { on = "<Esc>", run = "close", desc = "Cancel the confirm" },
     { on = "<C-[>", run = "close", desc = "Cancel the confirm" },
@@ -492,7 +486,6 @@ keymap = [
 ]
 
 [cmp]
-
 keymap = [
     { on = "<C-c>", run = "close", desc = "Cancel completion" },
     { on = "<Tab>", run = "close --submit", desc = "Submit the completion" },
@@ -516,7 +509,6 @@ keymap = [
 ]
 
 [help]
-
 keymap = [
     { on = "<Esc>", run = "escape", desc = "Clear the filter, or hide the help" },
     { on = "<C-[>", run = "escape", desc = "Clear the filter, or hide the help" },
