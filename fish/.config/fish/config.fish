@@ -157,6 +157,7 @@ abbr --add cfc cargo fmt -- --check
 abbr --add cfg cargo flamegraph
 abbr --add ci cargo install
 abbr --add cil cargo install --list
+abbr --add cin cargo init
 abbr --add cl cargo --list
 abbr --add cr cargo run
 abbr --add cre cargo run --example
